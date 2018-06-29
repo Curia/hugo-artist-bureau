@@ -1,0 +1,31 @@
+/*
+--------------------
+GRID
+--------------------
+*/
+
+$medium-breakpoint: 48rem;
+$large-breakpoint: 75rem;
+$extra-large-breakpoint: 90rem;
+$gutter-size-small: 2px;
+$gutter-size-medium: 3px;
+$gutter-size-large: 10px;
+$medium-container-max-width: 670px;
+$large-container-max-width: 1200px;
+$extra-large-container-max-width: 1400px;
+
+/*
+--------------------
+BASE VARIABLES
+--------------------
+*/
+
+// The font scale multiplier (e.g. 2 = 32px/2em/2rem)
+$base-font-scale: 1;
+// Used for font size calculations & conversions
+$font-size-base: 16;
+$font-family-base: Arial, sans-serif;
+$font-weight-base: normal;
+$font-weight-bold: 700;
+$line-height-base: 1.15;
+

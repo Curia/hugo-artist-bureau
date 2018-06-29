@@ -26,8 +26,8 @@ export default function(env) {
       }
     },
     styles: {
-      src: src + "css/*.css",
-      watch: src + "css/**/*.css",
+      src: src + "scss/*.scss",
+      watch: src + "scss/**/*.scss",
       dest: dest + "static/css",
       tmp: tmp + "css"
     },
