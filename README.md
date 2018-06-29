@@ -1,6 +1,10 @@
 # Hugo Boilerplate
 **A Hugo boilerplate for building modern websites 🌲**
 
+Fork of the [Hugo Boilerplate](https://github.com/forestryio-templates/hugo-boilerplate) with some changes.
+- Uses scss for styling
+- Some default styling rules added
+
 This boilerplate wraps [Hugo](gohugo.io) with [Gulp](https://gulpjs.com/) as your local development build pipeline.
 
 [PostCSS](http://postcss.org/) and [Webpack](https://webpack.js.org/) + [Babel](https://babeljs.io/) are used for CSS and JS compiling & transpiling.
