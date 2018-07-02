@@ -2,8 +2,14 @@
   "name": "hugo-boilerplate",
   "version": "1.0.0",
   "description": "A Hugo boilerplate for building modern websites",
-  "repository": "https://github.com/forestryio/hugo-boilerplate",
-  "author": "forestryio",
+  "repository": "https://github.com/Curia/hugo-boilerplate",
+  "author": "Adam Phillips",
+  "contributors":[
+      {
+          "name": "forestryio",
+          "url": "https://github.com/forestryio/hugo-boilerplate"
+      }
+  ],
   "license": "MIT",
   "scripts": {
     "module": "./scripts/module.sh",
