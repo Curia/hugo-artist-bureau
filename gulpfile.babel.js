@@ -5,11 +5,13 @@ import fs from "fs"
 import gulp from "gulp"
 import GulpConfig from "./gulp.config.js"
 import imagemin from "gulp-imagemin"
+import concat from "gulp-concat"
 import named from "vinyl-named"
 import newer from "gulp-newer"
 import {dirname, basename} from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename"
+import sass from "gulp-sass"
 import runsequence from "run-sequence"
 import {spawn} from "child_process"
 import sprite from "gulp-svg-sprite"
@@ -40,6 +42,22 @@ gulp.task("generator", cb => build(cb))
  */
 gulp.task("build", ["clean"], cb => {
   runsequence(["styles", "scripts", "images", "svg"], "generator", cb)
+})
+
+/**
+ * @task sass
+ * Runs SASS related tasks for styling
+ */
+gulp.task("sass", cb => {
+    const task = gulp
+      .src(['src/scss/styles.scss', 'src/modules/*/*.scss'])
+      //.src(gulpConfig.styles.src)
+      .pipe(sourcemaps.init({loadMaps: true}))
+      .pipe(concat('styles.css'))
+      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest(gulpConfig.styles.dest))
+    return task
 })
 
 /**
