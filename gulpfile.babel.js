@@ -47,17 +47,46 @@ gulp.task("build", ["clean"], cb => {
 
 /**
  * @task sass
- * Runs SASS related tasks for styling
+ * Runs SASS production related tasks for styling
  */
-gulp.task("sass", cb => {
+gulp.task("sass:production", cb => {
     const task = gulp
-      .src(['src/scss/styles.scss', 'src/modules/*/*.scss'])
-      //.src(gulpConfig.styles.src)
+      .src([
+        "./src/scss/styles.scss",
+        "./src/modules/*/*.scss",
+      ])
       .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(concat('styles.css'))
-      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-      .pipe(sourcemaps.write())
+      .pipe(sass({
+          outputStyle: 'compressed'
+      }).on('error', sass.logError))
+      .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(gulpConfig.styles.dest))
+      .pipe(browserSync.stream())
+
+    if (isProduction) {
+      task.pipe(browserSync.stream())
+      .pipe(browserSync.stream())	
+    }
+    return task
+})
+
+/**
+ * @task sass:development
+ * Runs SASS development related tasks for styling
+ */
+gulp.task("sass:development", cb => {
+    if (isProduction) return cb()
+
+    const task = gulp
+    .src([
+        "./src/scss/styles.scss",
+        "./src/modules/*/*.scss",
+      ])
+      .pipe(concat('styles.css'))
+      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+      .pipe(gulp.dest(gulpConfig.styles.tmp))
+      .pipe(browserSync.stream())
     return task
 })
 
@@ -72,11 +101,11 @@ gulp.task("babel", cb => {
       .pipe(sourcemaps.init())
       .pipe(babel()).on('error', function(e) {
         console.log('>>> ERROR', e);
-        // emit here
         this.emit('end');
       })
-      .pipe(sourcemaps.write('.'))
+      .pipe(sourcemaps.write("."))
       .pipe(gulp.dest(gulpConfig.scripts.dest))
+      .pipe(browserSync.stream())
     return task
 });
 
