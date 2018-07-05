@@ -7,6 +7,7 @@ import GulpConfig from "./gulp.config.js"
 import imagemin from "gulp-imagemin"
 import concat from "gulp-concat"
 import named from "vinyl-named"
+import babel from "gulp-babel"
 import newer from "gulp-newer"
 import {dirname, basename} from "path"
 import postcss from "gulp-postcss"
@@ -59,6 +60,25 @@ gulp.task("sass", cb => {
       .pipe(gulp.dest(gulpConfig.styles.dest))
     return task
 })
+
+/**
+ * @task babel
+ * Runs es6 tasks
+ */
+gulp.task("babel", cb => {
+    const task = gulp
+      .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
+      .pipe(concat('scripts.js'))
+      .pipe(sourcemaps.init())
+      .pipe(babel()).on('error', function(e) {
+        console.log('>>> ERROR', e);
+        // emit here
+        this.emit('end');
+      })
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest(gulpConfig.scripts.dest))
+    return task
+});
 
 /**
  * @task server
