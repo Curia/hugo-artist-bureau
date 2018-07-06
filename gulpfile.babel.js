@@ -62,11 +62,9 @@ gulp.task("sass:production", cb => {
       }).on('error', sass.logError))
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(gulpConfig.styles.dest))
-      .pipe(browserSync.stream())
 
     if (isProduction) {
       task.pipe(browserSync.stream())
-      .pipe(browserSync.stream())	
     }
     return task
 })
@@ -91,10 +89,10 @@ gulp.task("sass:development", cb => {
 })
 
 /**
- * @task babel
+ * @task babel:production
  * Runs es6 tasks
  */
-gulp.task("babel", cb => {
+gulp.task("babel:production", cb => {
     const task = gulp
       .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
       .pipe(concat('scripts.js'))
@@ -105,6 +103,29 @@ gulp.task("babel", cb => {
       })
       .pipe(sourcemaps.write("."))
       .pipe(gulp.dest(gulpConfig.scripts.dest))
+
+      if (isProduction) {
+        task.pipe(browserSync.stream())
+      }
+
+    return task
+});
+
+/**
+ * @task babel:development
+ * Runs es6 tasks
+ */
+gulp.task("babel:development", cb => {
+    if (isProduction) return cb()
+
+    const task = gulp
+      .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
+      .pipe(concat('scripts.js'))
+      .pipe(babel()).on('error', function(e) {
+        console.log('>>> ERROR', e);
+        this.emit('end');
+      })
+      .pipe(gulp.dest(gulpConfig.scripts.tmp))
       .pipe(browserSync.stream())
     return task
 });
