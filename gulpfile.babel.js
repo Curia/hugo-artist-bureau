@@ -13,6 +13,7 @@ import {dirname, basename} from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename"
 import sass from "gulp-sass"
+import sassGlob from "gulp-sass-glob";
 import runsequence from "run-sequence"
 import {spawn} from "child_process"
 import sprite from "gulp-svg-sprite"
@@ -51,12 +52,9 @@ gulp.task("build", ["clean"], cb => {
  */
 gulp.task("sass:production", cb => {
     const task = gulp
-      .src([
-        "./src/scss/styles.scss",
-        "./src/modules/*/*.scss",
-      ])
+      .src("./src/scss/styles.scss")
       .pipe(sourcemaps.init({loadMaps: true}))
-      .pipe(concat('styles.css'))
+      .pipe(sassGlob())
       .pipe(sass({
           outputStyle: 'compressed'
       }).on('error', sass.logError))
@@ -77,11 +75,8 @@ gulp.task("sass:development", cb => {
     if (isProduction) return cb()
 
     const task = gulp
-    .src([
-        "./src/scss/styles.scss",
-        "./src/modules/*/*.scss",
-      ])
-      .pipe(concat('styles.css'))
+    .src("./src/scss/styles.scss")
+      .pipe(sassGlob())
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(gulp.dest(gulpConfig.styles.tmp))
       .pipe(browserSync.stream())
