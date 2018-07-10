@@ -47,48 +47,6 @@ gulp.task("build", ["clean"], cb => {
 })
 
 /**
- * @task babel:production
- * Runs es6 tasks
- */
-gulp.task("babel:production", cb => {
-    const task = gulp
-      .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
-      .pipe(concat('scripts.js'))
-      .pipe(sourcemaps.init())
-      .pipe(babel()).on('error', function(e) {
-        console.log('>>> ERROR', e);
-        this.emit('end');
-      })
-      .pipe(sourcemaps.write("."))
-      .pipe(gulp.dest(gulpConfig.scripts.dest))
-
-      if (isProduction) {
-        task.pipe(browserSync.stream())
-      }
-
-    return task
-});
-
-/**
- * @task babel:development
- * Runs es6 tasks
- */
-gulp.task("babel:development", cb => {
-    if (isProduction) return cb()
-
-    const task = gulp
-      .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
-      .pipe(concat('scripts.js'))
-      .pipe(babel()).on('error', function(e) {
-        console.log('>>> ERROR', e);
-        this.emit('end');
-      })
-      .pipe(gulp.dest(gulpConfig.scripts.tmp))
-      .pipe(browserSync.stream())
-    return task
-});
-
-/**
  * @task server
  * Initializes browsersync server and
  * sets up watch tasks to rebuild
@@ -100,7 +58,7 @@ gulp.task("server", ["build"], () => {
       log(err, err.toString(), ["Styles"])
       this.emit(end)
     })
-  gulp.watch(gulpConfig.scripts.watch, ["scripts"])
+  gulp.watch(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'], ["scripts"])
     .on('error', (err) => {
       log(err, err.toString(), ["Scripts"])
       this.emit(end)
@@ -185,27 +143,20 @@ gulp.task("scripts", cb => {
  * and streams it if its a production server environment
  */
 gulp.task("scripts:production", cb => {
-  const task = gulp
-    .src(gulpConfig.scripts.src)
-    .pipe(named())
-    .pipe(
-      webpack(webpackConfig("production")).on("error", function(err) {
-        log(err, err.toString(), "Webpack")
-        this.emit("end")
-      })
-    )
-    .pipe(
-      rename(path => {
-        if (path.extname === ".js") path.extname = ".min.js"
-
-        return path
-      })
-    )
+    const task = gulp
+    .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
+    .pipe(concat('scripts.js'))
+    .pipe(sourcemaps.init())
+    .pipe(babel()).on('error', function(e) {
+      console.log('>>> ERROR', e);
+      this.emit('end');
+    })
+    .pipe(sourcemaps.write("."))
     .pipe(gulp.dest(gulpConfig.scripts.dest))
 
-  if (isProduction) {
-    task.pipe(browserSync.stream())
-  }
+    if (isProduction) {
+      task.pipe(browserSync.stream())
+    }
 
   return task
 })
@@ -216,26 +167,18 @@ gulp.task("scripts:production", cb => {
  * and streams it if its a development server environment
  */
 gulp.task("scripts:development", cb => {
-  if (isProduction) return cb()
+    if (isProduction) return cb()
 
-  return gulp
-    .src(gulpConfig.scripts.src)
-    .pipe(named())
-    .pipe(
-      webpack(webpackConfig()).on("error", function(err) {
-        log(err, err.toString(), "Webpack")
-        this.emit("end")
+    const task = gulp
+      .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
+      .pipe(concat('scripts.js'))
+      .pipe(babel()).on('error', function(e) {
+        console.log('>>> ERROR', e);
+        this.emit('end');
       })
-    )
-    .pipe(
-      rename(path => {
-        if (path.extname === ".js") path.extname = ".min.js"
-
-        return path
-      })
-    )
-    .pipe(gulp.dest(gulpConfig.scripts.tmp))
-    .pipe(browserSync.stream())
+      .pipe(gulp.dest(gulpConfig.scripts.tmp))
+      .pipe(browserSync.stream())
+    return task
 })
 
 /**
