@@ -47,43 +47,6 @@ gulp.task("build", ["clean"], cb => {
 })
 
 /**
- * @task sass
- * Runs SASS production related tasks for styling
- */
-gulp.task("sass:production", cb => {
-    const task = gulp
-      .src("./src/scss/styles.scss")
-      .pipe(sourcemaps.init({loadMaps: true}))
-      .pipe(sassGlob())
-      .pipe(sass({
-          outputStyle: 'compressed'
-      }).on('error', sass.logError))
-      .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest(gulpConfig.styles.dest))
-
-    if (isProduction) {
-      task.pipe(browserSync.stream())
-    }
-    return task
-})
-
-/**
- * @task sass:development
- * Runs SASS development related tasks for styling
- */
-gulp.task("sass:development", cb => {
-    if (isProduction) return cb()
-
-    const task = gulp
-    .src("./src/scss/styles.scss")
-      .pipe(sassGlob())
-      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-      .pipe(gulp.dest(gulpConfig.styles.tmp))
-      .pipe(browserSync.stream())
-    return task
-})
-
-/**
  * @task babel:production
  * Runs es6 tasks
  */
@@ -132,7 +95,7 @@ gulp.task("babel:development", cb => {
  */
 gulp.task("server", ["build"], () => {
   browserSync.init(browserSyncConfig())
-  gulp.watch(gulpConfig.styles.watch, ["styles"])
+  gulp.watch('./src/modules/**/*.scss', ["styles"])
     .on('error', (err) => {
       log(err, err.toString(), ["Styles"])
       this.emit(end)
@@ -175,30 +138,19 @@ gulp.task("styles", cb => {
  * and streams it if its a production server environment
  */
 gulp.task("styles:production", cb => {
-  const task = gulp
-    .src(gulpConfig.styles.src)
+    const task = gulp
+    .src("./src/scss/styles.scss")
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(
-      postcss({env: "production"}).on("error", err =>
-        log(err, err.toString(), "PostCSS")
-      )
-    )
-    .pipe(sourcemaps.write("."))
-    .pipe(
-      rename(path => {
-        path.dirname = "/"
-
-        if (path.extname.indexOf(".map") < 0) path.extname = ".min.css"
-
-        return path
-      })
-    )
+    .pipe(sassGlob())
+    .pipe(sass({
+        outputStyle: 'compressed'
+    }).on('error', sass.logError))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(gulpConfig.styles.dest))
 
   if (isProduction) {
     task.pipe(browserSync.stream())
   }
-
   return task
 })
 
@@ -208,22 +160,15 @@ gulp.task("styles:production", cb => {
  * and streams it if its a development server environment
  */
 gulp.task("styles:development", cb => {
-  if (isProduction) return cb()
+    if (isProduction) return cb()
 
-  return gulp
-    .src(gulpConfig.styles.src)
-    .pipe(postcss().on("error", err => log(err, err.toString(), "PostCSS")))
-    .pipe(
-      rename(path => {
-        path.dirname = "/"
-
-        if (path.extname.indexOf(".map") < 0) path.extname = ".min.css"
-
-        return path
-      })
-    )
-    .pipe(gulp.dest(gulpConfig.styles.tmp))
-    .pipe(browserSync.stream())
+    const task = gulp
+    .src("./src/scss/styles.scss")
+      .pipe(sassGlob())
+      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+      .pipe(gulp.dest(gulpConfig.styles.tmp))
+      .pipe(browserSync.stream())
+    return task
 })
 
 /**
