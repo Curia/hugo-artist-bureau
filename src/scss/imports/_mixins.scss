@@ -1,0 +1,21 @@
+// Convert a pixel value to EM units
+@function pxToEm($pixel) {
+  @return $pixel/$font-size-base+em;
+}
+
+// Convert a pixel value to REM units
+@function pxToRem($pixel) {
+  @return $pixel/$font-size-base+rem;
+}
+
+@mixin inline-block() {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
