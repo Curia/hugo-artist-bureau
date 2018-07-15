@@ -53,7 +53,7 @@ gulp.task("build", ["clean"], cb => {
  */
 gulp.task("server", ["build"], () => {
   browserSync.init(browserSyncConfig())
-  gulp.watch('./src/modules/**/*.scss', ["styles"])
+  gulp.watch(['./src/modules/**/*.scss', './src/scss/**/*.scss'], ["styles"])
     .on('error', (err) => {
       log(err, err.toString(), ["Styles"])
       this.emit(end)
