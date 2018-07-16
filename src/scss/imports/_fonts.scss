@@ -1,14 +1,15 @@
 /* Font base  */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
 body {
     font-size: $font-size-base + px;
     line-height: $line-height-base;
     font-weight: $font-weight-base;
     font-family: $font-family-base;
+    color: $font-color-base;
     /* Better Font Rendering */
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
 }
 
