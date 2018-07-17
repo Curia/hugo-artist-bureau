@@ -1,0 +1,11 @@
+---
+label: Photo post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: post_name
+  label: Post name
+- type: file
+  name: post_image
+  label: Post image
