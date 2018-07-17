@@ -9,3 +9,5 @@ fields:
 - type: file
   name: post_image
   label: Post image
+pages:
+- hugo/content/posts/forestry-test.md
