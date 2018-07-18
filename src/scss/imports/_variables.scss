@@ -1,7 +1,5 @@
 /*
---------------------
 GRID
---------------------
 */
 
 $medium-breakpoint: 48rem;
@@ -15,17 +13,24 @@ $large-container-max-width: 1200px;
 $extra-large-container-max-width: 1400px;
 
 /*
---------------------
 BASE VARIABLES
---------------------
 */
 
 // The font scale multiplier (e.g. 2 = 32px/2em/2rem)
 $base-font-scale: 1;
 // Used for font size calculations & conversions
 $font-size-base: 16;
-$font-color-base: #333;
+$font-color-base: #343a40;
 $font-family-base:  Arial, "Helvetica Neue", Helvetica, sans-serif;
-$font-weight-base: normal;
+$font-weight-base: 400;
 $font-weight-bold: 700;
 $line-height-base: 1.15;
+
+/*
+BASE VARIABLES
+*/
+
+$padding-small: 15px;
+$padding-medium: 25px;
+$padding-large: 35px;
+$padding-x-large: 45px;

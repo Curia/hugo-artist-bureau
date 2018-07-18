@@ -1,16 +1,17 @@
-/* Font base  */
+/*
+FONT BASE
+*/
 
-
-body {
+html, body {
     font-size: $font-size-base + px;
     line-height: $line-height-base;
     font-weight: $font-weight-base;
     font-family: $font-family-base;
     color: $font-color-base;
     /* Better Font Rendering */
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased; 
+    text-rendering: optimizeLegibility;    
     -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 body,
