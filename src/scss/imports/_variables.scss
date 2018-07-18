@@ -1,18 +1,4 @@
 /*
-GRID
-*/
-
-$medium-breakpoint: 48rem;
-$large-breakpoint: 75rem;
-$extra-large-breakpoint: 90rem;
-$gutter-size-small: 2px;
-$gutter-size-medium: 3px;
-$gutter-size-large: 10px;
-$medium-container-max-width: 670px;
-$large-container-max-width: 1200px;
-$extra-large-container-max-width: 1400px;
-
-/*
 BASE VARIABLES
 */
 
@@ -26,11 +12,36 @@ $font-weight-base: 400;
 $font-weight-bold: 700;
 $line-height-base: 1.15;
 
+
 /*
-BASE VARIABLES
+GRID
+*/
+
+$medium-breakpoint: 48rem;
+$large-breakpoint: 75rem;
+$extra-large-breakpoint: 90rem;
+$gutter-size-small: 2px;
+$gutter-size-medium: 3px;
+$gutter-size-large: 10px;
+$medium-container-max-width: 670px;
+$large-container-max-width: 1200px;
+$extra-large-container-max-width: 1400px;
+
+
+/*
+PADDING
 */
 
 $padding-small: 15px;
 $padding-medium: 25px;
 $padding-large: 35px;
 $padding-x-large: 45px;
+
+
+/*
+COLORS
+*/
+
+$color-black: #000;
+$color-white: #fff;
+$swatch-black: #343a40;
