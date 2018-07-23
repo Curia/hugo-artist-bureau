@@ -1,0 +1,42 @@
+/*
+BASE/MOBILE
+*/
+
+.video-hero {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+/*
+MEDIUM
+*/
+
+@media screen and (min-width: $medium-breakpoint) {}
+
+/*
+LARGE
+*/
+
+@media screen and (min-width: $large-breakpoint) {}
+
+/*
+EXTRA LARGE
+*/
+
+@media screen and (min-width: $extra-large-breakpoint) {}

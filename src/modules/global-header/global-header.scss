@@ -3,8 +3,32 @@ BASE/MOBILE
 */
 
 .header {
-    padding: $padding-medium 0;
-    border-top: 4px solid $swatch-black;
+    padding: $padding-x-large;
+    background: none;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+    }
+
+    &__nav {
+
+        &-item {
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0 $padding-medium;
+            font-size: pxToRem(14);
+        }
+    }
 }
 
 /*

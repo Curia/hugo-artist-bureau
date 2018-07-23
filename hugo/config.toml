@@ -6,7 +6,7 @@ baseurl = "/" # The subpath of your site, e.g. / or /blog
 languageCode = "en-us"
 languageLang = "en"
 defaultContentLanguage = "en"
-title = "My New Hugo Site"
+title = "Artist Bureau"
 
 # Build settings
 # --------------
@@ -47,6 +47,32 @@ author = "Your name"
   weight = 1
   identifier = "home"
   url = "/"
+  pre = ""
+[[menu.main]]
+  name = "Video + Print"
+  weight = 2
+  identifier = "media"
+  url = "/"
+  pre = ""
+[[menu.main]]
+  name = "Audio"
+  weight = 3
+  identifier = "audio"
+  url = "/"
+  pre = ""
+[[menu.main]]
+  name = "About"
+  weight = 4
+  identifier = "about"
+  url = "/"
+  pre = ""
+[[menu.main]]
+  name = "Contact"
+  weight = 5
+  identifier = "contact"
+  url = "/"
+  pre = ""
+
 
 # Related Content
 # ---------------

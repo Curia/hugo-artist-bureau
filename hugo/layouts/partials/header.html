@@ -1,11 +1,13 @@
 <header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <a href="{{ .Site.BaseURL }}" class="header__logo">
-                    {{ .Site.Title}}
-                </a>
-            </div>
-        </div>
+    <a href="{{ .Site.BaseURL }}" class="header__logo">
+        {{ .Site.Title}}
+    </a>
+    <div class="header__nav">
+        {{ $currentPage := . }} 
+        {{ range .Site.Menus.main }}
+        <a class="header__nav-item" href="{{ .URL }}">{{ .Pre }}
+            <span>{{ .Name }}</span>
+        </a>
+        {{ end }}
     </div>
 </header>
