@@ -1,0 +1,47 @@
+/*
+BASE VARIABLES
+*/
+
+// The font scale multiplier (e.g. 2 = 32px/2em/2rem)
+$base-font-scale: 1;
+// Used for font size calculations & conversions
+$font-size-base: 16;
+$font-color-base: #343a40;
+$font-family-base:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-weight-base: 400;
+$font-weight-bold: 700;
+$line-height-base: 1.15;
+
+
+/*
+GRID
+*/
+
+$medium-breakpoint: 48rem;
+$large-breakpoint: 75rem;
+$extra-large-breakpoint: 90rem;
+$gutter-size-small: 2px;
+$gutter-size-medium: 3px;
+$gutter-size-large: 10px;
+$medium-container-max-width: 670px;
+$large-container-max-width: 1200px;
+$extra-large-container-max-width: 1400px;
+
+
+/*
+PADDING
+*/
+
+$padding-small: 15px;
+$padding-medium: 25px;
+$padding-large: 35px;
+$padding-x-large: 45px;
+
+
+/*
+COLORS
+*/
+
+$color-black: #000;
+$color-white: #fff;
+$swatch-black: #343a40;

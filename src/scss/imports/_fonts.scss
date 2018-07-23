@@ -1,0 +1,21 @@
+/*
+FONT BASE
+*/
+
+html, body {
+    font-size: $font-size-base + px;
+    line-height: $line-height-base;
+    font-weight: $font-weight-base;
+    font-family: $font-family-base;
+    color: $font-color-base;
+    /* Better Font Rendering */
+    text-rendering: optimizeLegibility;    
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    -webkit-font-smoothing: antialiased;
+}

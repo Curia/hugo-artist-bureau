@@ -1,0 +1,24 @@
+{{ partial "head" . }}
+{{ partial "header" . }}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+
+            {{/* _index.md content displays here */}}
+            <p>{{ .Content }}</p>
+
+            {{/* Loops through and displays all child pages */}}
+            <ul>
+                {{ range .Data.Pages }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+{{ partial "footer" . }}
