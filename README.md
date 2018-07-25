@@ -103,19 +103,11 @@ npm run hugo -- new posts/example-post.md
 # Inline SVG
 Any SVGs found in `src/img/` will be combined into a single SVG Sprite at `hugo/static/svg/sprite.symbol.svg`.
 
-<<<<<<< HEAD
-This boilerplate comes with a simple partial for using SVGs in your layouts. You can select an svg by passing in it's ID.
-
-```
-{{/* Using a logo stored at src/img/github.svg */}}
-{{ partial "svg" (dict "id" "github" "class" "optional-class" "width" 32 "height" 32) -}}
-=======
 This boilerplate comes with a simple partial for using SVGs in your layouts. You can select an svg by passing in it's ID. All svg ID's are prefixed with `svg--`
 
 ```
 {{/* Using a logo stored at src/img/github.svg */}}
 {{ partial "svg" (dict "id" "svg--github" "class" "optional-class" "width" 32 "height" 32) -}}
->>>>>>> c91bf0fcd395d66c375ae95ae67cb8e6d316f1ca
 ```
 **Note: the `class`, `width`, and `height` params are optional**
 

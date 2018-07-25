@@ -6,11 +6,7 @@ baseurl = "/" # The subpath of your site, e.g. / or /blog
 languageCode = "en-us"
 languageLang = "en"
 defaultContentLanguage = "en"
-<<<<<<< HEAD
 title = "Artist Bureau"
-=======
-title = "My New Hugo Site"
->>>>>>> c91bf0fcd395d66c375ae95ae67cb8e6d316f1ca
 
 # Build settings
 # --------------
