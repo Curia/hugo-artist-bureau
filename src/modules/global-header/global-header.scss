@@ -3,30 +3,63 @@ BASE/MOBILE
 */
 
 .header {
-    padding: $padding-x-large;
     background: none;
-    width: 100%;
-    top: 0;
-    position: absolute;
-    z-index: 1;
     display: flex;
     justify-content: space-between;
+    padding: $padding-medium;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
     &__logo {
         color: $color-white;
+        font-size: pxToRem(22);
+        font-weight: $font-weight-bold;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: $font-weight-bold;
     }
 
     &__nav {
 
+        &-wrapper {
+            background: $color-white;
+            display: none;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            left: 0;
+            padding-top: $padding-medium;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+            z-index: -1;
+        }
+
         &-item {
-            color: $color-white;
+            color: $color-black;
+            font-size: pxToRem(16);
+            padding: $padding-medium;
+            text-align: center;
             text-decoration: none;
             text-transform: uppercase;
-            padding: 0 $padding-medium;
-            font-size: pxToRem(14);
+        }
+
+        &-mobile {
+
+            &__open,
+            &__close {
+                z-index: 2;
+            }
+
+            &__open {
+                fill: $color-white;
+            }
+
+            &__close {
+                display: none;
+                fill: $color-black;
+            }
         }
     }
 }
@@ -46,6 +79,9 @@ LARGE
 
 @media screen and (min-width: $large-breakpoint) {
 
+    .header {
+        padding: $padding-x-large;
+    }
 }
 
 

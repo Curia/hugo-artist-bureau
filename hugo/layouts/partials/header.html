@@ -3,11 +3,15 @@
         {{ .Site.Title}}
     </a>
     <div class="header__nav">
-        {{ $currentPage := . }} 
-        {{ range .Site.Menus.main }}
-        <a class="header__nav-item" href="{{ .URL }}">{{ .Pre }}
-            <span>{{ .Name }}</span>
-        </a>
-        {{ end }}
+        <div class="header__nav-wrapper">
+            {{ $currentPage := . }} 
+            {{ range .Site.Menus.main }}
+            <a class="header__nav-item" href="{{ .URL }}">{{ .Pre }}
+                <span>{{ .Name }}</span>
+            </a>
+            {{ end }}
+        </div>
+        {{ partial "svg" (dict "id" "svg--menu" "class" "header__nav-mobile__open" "width" 32 "height" 32) -}}
+        {{ partial "svg" (dict "id" "svg--cross" "class" "header__nav-mobile__close" "width" 32 "height" 32) -}}
     </div>
 </header>
