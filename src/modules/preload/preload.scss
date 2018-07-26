@@ -1,0 +1,52 @@
+/*
+BASE/MOBILE
+*/
+
+.preload {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 100;
+
+    &__block {
+        height: 33.35%;
+        width: 100%;
+        overflow: hidden;
+
+        &-background {
+            width: 100%;
+            height: 100%;
+            background: #171719;
+            overflow: hidden;
+        }
+    }
+}
+
+/*
+MEDIUM
+*/
+
+@media screen and (min-width: $medium-breakpoint)  {
+
+}
+
+
+/*
+LARGE
+*/
+
+@media screen and (min-width: $large-breakpoint) {
+
+}
+
+
+/*
+EXTRA LARGE
+*/
+
+@media screen and (min-width: $extra-large-breakpoint) {
+
+}
