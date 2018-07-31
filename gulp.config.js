@@ -27,7 +27,7 @@ export default function(env) {
     },
     styles: {
       src: src + "scss/*.scss",
-      watch: src + "scss/**/*.scss",
+      watch: [src + "scss/**/*.scss", src + "modules/**/*.scss"],
       dest: dest + "static/css",
       tmp: tmp + "css"
     },
