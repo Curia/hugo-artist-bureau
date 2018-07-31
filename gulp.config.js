@@ -32,8 +32,8 @@ export default function(env) {
       tmp: tmp + "css"
     },
     scripts: {
-      src: src + "js/*+(js|jsx)",
-      watch: src + "js/**/*+(js|jsx)",
+      src: src +  "js/*+(js|jsx)",
+      watch: [src + "js/*+(js|jsx)", src + "modules/**/*+(js|jsx)"],
       dest: dest + "static/js/",
       tmp: tmp + "js/"
     },

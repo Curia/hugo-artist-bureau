@@ -1,3 +1,5 @@
+import anime from 'animejs'
+
 const $preload = document.querySelector('.preload');
 const $preloadTitle = $preload.querySelector('.preload__title');
 

@@ -1,9 +1,10 @@
 @import "imports/variables";
 @import "imports/mixins";
 @import "imports/reset";
-@import "imports/grid";
+//@import "imports/grid";
 @import "imports/fonts";
 
-@import "../modules/**/*.scss";
-
+@import "../modules/global-header/global-header";
+@import "../modules/preload/preload";
+@import "../modules/video-hero/video-hero";
 /* Base styling */

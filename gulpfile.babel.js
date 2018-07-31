@@ -1,27 +1,25 @@
 import BrowserSync from "browser-sync"
+import GulpConfig from "./gulp.config.js"
 import browserSyncConfig from "./.browsersyncrc.js"
 import del from "del"
 import fs from "fs"
 import gulp from "gulp"
-import GulpConfig from "./gulp.config.js"
 import imagemin from "gulp-imagemin"
-import concat from "gulp-concat"
 import named from "vinyl-named"
-import babel from "gulp-babel"
 import newer from "gulp-newer"
-import {dirname, basename} from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename"
+import runsequence from "run-sequence"
 import sass from "gulp-sass"
 import sassGlob from "gulp-sass-glob";
-import runsequence from "run-sequence"
-import {spawn} from "child_process"
-import sprite from "gulp-svg-sprite"
 import sourcemaps from "gulp-sourcemaps"
+import sprite from "gulp-svg-sprite"
 import through from "through2"
 import util from "gulp-util"
 import webpack from "webpack-stream"
 import webpackConfig from "./.webpackrc.js"
+import {dirname, basename} from "path"
+import {spawn} from "child_process"
 
 const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
@@ -53,12 +51,12 @@ gulp.task("build", ["clean"], cb => {
  */
 gulp.task("server", ["build"], () => {
   browserSync.init(browserSyncConfig())
-  gulp.watch(['./src/modules/**/*.scss', './src/scss/**/*.scss'], ["styles"])
+  gulp.watch(gulpConfig.styles.watch, ["styles"])
     .on('error', (err) => {
       log(err, err.toString(), ["Styles"])
       this.emit(end)
     })
-  gulp.watch(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'], ["scripts"])
+  gulp.watch(gulpConfig.scripts.watch, ["scripts"])
     .on('error', (err) => {
       log(err, err.toString(), ["Scripts"])
       this.emit(end)
@@ -96,19 +94,32 @@ gulp.task("styles", cb => {
  * and streams it if its a production server environment
  */
 gulp.task("styles:production", cb => {
-    const task = gulp
-    .src("./src/scss/styles.scss")
+  const task = gulp
+    .src(gulpConfig.styles.src)
     .pipe(sourcemaps.init({loadMaps: true}))
+    /*.pipe(
+      postcss({env: "production"}).on("error", err =>
+        log(err, err.toString(), "PostCSS")
+      )
+    )*/
     .pipe(sassGlob())
-    .pipe(sass({
-        outputStyle: 'compressed'
-    }).on('error', sass.logError))
-    .pipe(sourcemaps.write('.'))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sourcemaps.write("."))
+    .pipe(
+      rename(path => {
+        path.dirname = "/"
+
+        if (path.extname.indexOf(".map") < 0) path.extname = ".min.css"
+
+        return path
+      })
+    )
     .pipe(gulp.dest(gulpConfig.styles.dest))
 
   if (isProduction) {
     task.pipe(browserSync.stream())
   }
+
   return task
 })
 
@@ -118,15 +129,24 @@ gulp.task("styles:production", cb => {
  * and streams it if its a development server environment
  */
 gulp.task("styles:development", cb => {
-    if (isProduction) return cb()
+  if (isProduction) return cb()
 
-    const task = gulp
-    .src("./src/scss/styles.scss")
-      .pipe(sassGlob())
-      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-      .pipe(gulp.dest(gulpConfig.styles.tmp))
-      .pipe(browserSync.stream())
-    return task
+  return gulp
+    .src(gulpConfig.styles.src)
+    //.pipe(postcss().on("error", err => log(err, err.toString(), "PostCSS")))
+    .pipe(sassGlob())
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(
+      rename(path => {
+        path.dirname = "/"
+
+        if (path.extname.indexOf(".map") < 0) path.extname = ".min.css"
+
+        return path
+      })
+    )
+    .pipe(gulp.dest(gulpConfig.styles.tmp))
+    .pipe(browserSync.stream())
 })
 
 /**
@@ -143,20 +163,27 @@ gulp.task("scripts", cb => {
  * and streams it if its a production server environment
  */
 gulp.task("scripts:production", cb => {
-    const task = gulp
-    .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
-    .pipe(concat('scripts.js'))
-    .pipe(sourcemaps.init())
-    .pipe(babel()).on('error', function(e) {
-      console.log('>>> ERROR', e);
-      this.emit('end');
-    })
-    .pipe(sourcemaps.write("."))
+  const task = gulp
+    .src(gulpConfig.scripts.src)
+    .pipe(named())
+    .pipe(
+      webpack(webpackConfig("production")).on("error", function(err) {
+        log(err, err.toString(), "Webpack")
+        this.emit("end")
+      })
+    )
+    .pipe(
+      rename(path => {
+        if (path.extname === ".js") path.extname = ".min.js"
+
+        return path
+      })
+    )
     .pipe(gulp.dest(gulpConfig.scripts.dest))
 
-    if (isProduction) {
-      task.pipe(browserSync.stream())
-    }
+  if (isProduction) {
+    task.pipe(browserSync.stream())
+  }
 
   return task
 })
@@ -167,18 +194,26 @@ gulp.task("scripts:production", cb => {
  * and streams it if its a development server environment
  */
 gulp.task("scripts:development", cb => {
-    if (isProduction) return cb()
+  if (isProduction) return cb()
 
-    const task = gulp
-      .src(['src/js/scripts.js', 'src/modules/*/*+(js|jsx)'])
-      .pipe(concat('scripts.js'))
-      .pipe(babel()).on('error', function(e) {
-        console.log('>>> ERROR', e);
-        this.emit('end');
+  return gulp
+    .src(gulpConfig.scripts.src)
+    .pipe(named())
+    .pipe(
+      webpack(webpackConfig()).on("error", function(err) {
+        log(err, err.toString(), "Webpack")
+        this.emit("end")
       })
-      .pipe(gulp.dest(gulpConfig.scripts.tmp))
-      .pipe(browserSync.stream())
-    return task
+    )
+    .pipe(
+      rename(path => {
+        if (path.extname === ".js") path.extname = ".min.js"
+
+        return path
+      })
+    )
+    .pipe(gulp.dest(gulpConfig.scripts.tmp))
+    .pipe(browserSync.stream())
 })
 
 /**

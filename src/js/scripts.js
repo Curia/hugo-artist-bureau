@@ -1,1 +1,1 @@
-console.log("Find me in src/js/scripts.js")
+import "../modules/preload/preload";
