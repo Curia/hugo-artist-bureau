@@ -31,6 +31,5 @@ const animateIn = () => {
 }
 
 document.onreadystatechange = function () {
-    console.log('page loaded')
     splitTitle($preloadTitle)
 }
