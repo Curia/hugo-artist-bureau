@@ -38,6 +38,17 @@ BASE/MOBILE
         width: 100%;
         z-index: 5;
         overflow: hidden;
+        letter-spacing: 5px;
+
+        &-letter,
+        &-letter div {
+            position: relative;
+            display: inline-block;
+        }
+
+        &-letter {
+            overflow: hidden;
+        }
     }
 }
 
