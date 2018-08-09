@@ -12,6 +12,15 @@ BASE/MOBILE
     width: 100%;
     z-index: 1;
 
+    #menuc {
+        display: block;
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+    }
+
     &__logo {
         color: $color-white;
         font-size: pxToRem(22);

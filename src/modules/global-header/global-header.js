@@ -1,62 +1,36 @@
 import anime from 'animejs'
 
-const openMenu = () => {
-    const $nav = document.querySelector('.header__nav');
-    const $navBackground = document.querySelector('.header__nav-background');
-    const $navWrapper = document.querySelector('.header__nav-wrapper');
+// Set up Canvas
+const c = document.getElementById("menuc");
+const ctx = c.getContext("2d");
+const $menuOpen = document.querySelector('.header__nav-mobile__open');
 
-    if (!$nav.classList.contains('active')) {
-        $nav.classList.add('active');
-    }
-
-    anime({
-        targets: $navBackground,
-        opacity: 1,
-        height: '200vh',
-        width: '200vw',
-        duration: 500,
-        easing: "easeOutCubic",
-        complete: () => {
-            anime({
-                targets: '.header__nav-item',
-                opacity: 1,
-                duration: 500,
-                easing: "easeOutCubic",
-            });
-        }
-    })
-}
-
-const closeMenu = () => {
-    const $nav = document.querySelector('.header__nav');
-    const $navBackground = document.querySelector('.header__nav-background');
-    const $navWrapper = document.querySelector('.header__nav-wrapper');
-
-    if ($nav.classList.contains('active')) {
-        $nav.classList.remove('active');
-    }
-    anime({
-        targets: '.header__nav-item',
-        opacity: 0,
-        duration: 500,
-        easing: "easeInCubic",
-        complete: () => {
-            anime({
-                targets: $navBackground,
-                opacity: 0,
-                height: '0',
-                width: '0',
-                duration: 500,
-                easing: "easeInCubic"
-            })
-        }
-    });
-}
-
-document.querySelector('.header__nav-mobile__open').onclick = () => {
-    openMenu();
+const resizeCanvas = () => {
+    let cW = window.innerWidth;
+    let cH = window.innerHeight;
+    c.width = cW * devicePixelRatio;
+    c.height = cH * devicePixelRatio;
+    ctx.scale(devicePixelRatio, devicePixelRatio);
 };
 
-document.querySelector('.header__nav-mobile__close').onclick = () => {
-    closeMenu();
-};
+
+const starterCircle = () => {
+    
+    var centerX = $menuOpen.getBoundingClientRect().left + $menuOpen.getBoundingClientRect().width / 2;
+    var centerY = $menuOpen.getBoundingClientRect().top + $menuOpen.getBoundingClientRect().height / 2;
+    var radius = 10;
+    
+    console.log(centerX, centerY);
+	// define the arc path
+	ctx.beginPath();
+	ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+	ctx.fillStyle = 'rgba(125,0,0,1)';
+    ctx.fill();
+    ctx.save();
+    console.log('circle drawn')
+}
+
+(global => {
+    resizeCanvas();
+    starterCircle();
+})(window)
