@@ -3,6 +3,7 @@ BASE/MOBILE
 */
 
 .header {
+    align-items: center;
     background: none;
     display: flex;
     justify-content: space-between;
@@ -12,64 +13,50 @@ BASE/MOBILE
     width: 100%;
     z-index: 1;
 
-    #menuc {
-        display: block;
-        height: 100vh;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100vw;
-    }
-
     &__logo {
         color: $color-white;
         font-size: pxToRem(22);
         font-weight: $font-weight-bold;
         text-decoration: none;
         text-transform: uppercase;
+        min-width: 50%;
     }
 
     &__nav {
+        background: $color-white;
+        position: fixed;
+        width: 100%;
+        max-width: 360px;
+        height: 100%;
+        overflow-y: auto;
+        top: 0;
+        right: -100%;
+        transition: right .5s ease;
 
-        &-background{
-            background: $color-white;
-            height: 32px;
-            opacity: 0;
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 32px;
-            z-index: -1;
+        &.active {
+            right: 0%;
+            transition: right .5s ease;
         }
 
         &-wrapper {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            justify-content: center;
-            left: 0;
-            padding-top: $padding-medium;
-            position: absolute;
-            top: 0;
-            width: 100vw;
-            z-index: -1;
+            display: block;
+            padding: $padding-medium;
+            padding-top: calc(100vh / 4);
+            text-align: right;
         }
 
         &-item {
-            color: $color-black;
-            font-size: pxToRem(16);
-            opacity: 0;
-            padding: $padding-medium;
-            text-align: center;
+            display: block;
+            font-size: 1.5rem;
+            line-height: 3.125rem;
             text-decoration: none;
-            text-transform: uppercase;
+            color: $color-black;
         }
 
         &-mobile {
 
             &__open,
             &__close {
-                z-index: 2;
                 cursor: pointer;
             }
 
@@ -78,22 +65,10 @@ BASE/MOBILE
             }
 
             &__close {
-                display: none;
                 fill: $color-black;
-            }
-        }
-
-        &.active {
-
-            .header__nav-mobile {
-                &__open {
-                    display: none;
-                }
-    
-                &__close {
-                    display: block;
-                    fill: $color-black;
-                }  
+                position: absolute;
+                right: 12px;
+                top: 12px;
             }
         }
     }

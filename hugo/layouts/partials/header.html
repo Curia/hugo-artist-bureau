@@ -2,9 +2,10 @@
     <a href="{{ .Site.BaseURL }}" class="header__logo">
         {{ .Site.Title}}
     </a>
+    {{ partial "svg" (dict "id" "svg--menu" "class" "header__nav-mobile__open" "width" 32 "height" 32) -}}
     <div class="header__nav">
-        <div class="header__nav-background"></div>
         <div class="header__nav-wrapper">
+            {{ partial "svg" (dict "id" "svg--cross" "class" "header__nav-mobile__close" "width" 32 "height" 32) -}}
             {{ $currentPage := . }} 
             {{ range .Site.Menus.main }}
             <a class="header__nav-item" href="{{ .URL }}">{{ .Pre }}
@@ -12,8 +13,5 @@
             </a>
             {{ end }}
         </div>
-        <canvas id="menuc"></canvas>
-        {{ partial "svg" (dict "id" "svg--menu" "class" "header__nav-mobile__open" "width" 32 "height" 32) -}}
-        {{ partial "svg" (dict "id" "svg--cross" "class" "header__nav-mobile__close" "width" 32 "height" 32) -}}
     </div>
 </header>
