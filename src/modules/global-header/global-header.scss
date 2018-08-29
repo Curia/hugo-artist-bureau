@@ -14,24 +14,22 @@ BASE/MOBILE
     z-index: 1;
 
     &__logo {
-        color: $color-white;
+        color: $color-black;
         font-size: pxToRem(22);
-        font-weight: $font-weight-bold;
         text-decoration: none;
         text-transform: uppercase;
-        min-width: 50%;
     }
 
     &__nav {
         background: $color-white;
-        position: fixed;
-        width: 100%;
-        max-width: 360px;
         height: 100%;
+        max-width: 360px;
         overflow-y: auto;
-        top: 0;
+        position: fixed;
         right: -100%;
+        top: 0;
         transition: right .5s ease;
+        width: 100%;
 
         &.active {
             right: 0%;
@@ -46,11 +44,11 @@ BASE/MOBILE
         }
 
         &-item {
-            display: block;
-            font-size: 1.5rem;
-            line-height: 3.125rem;
-            text-decoration: none;
             color: $color-black;
+            display: block;
+            font-size: pxToRem(24);
+            line-height: pxToRem(50);
+            text-decoration: none;
         }
 
         &-mobile {
@@ -61,14 +59,14 @@ BASE/MOBILE
             }
 
             &__open {
-                fill: $color-white;
+                fill: $color-black;
             }
 
             &__close {
                 fill: $color-black;
                 position: absolute;
-                right: 12px;
-                top: 12px;
+                right: 25px;
+                top: 25px;
             }
         }
     }
@@ -90,7 +88,40 @@ LARGE
 @media screen and (min-width: $large-breakpoint) {
 
     .header {
-        padding: $padding-x-large;
+        padding: $padding-large;
+
+        &__nav {
+            background: none;
+            position: relative;
+            width: auto;
+            max-width: initial;
+            height: auto;
+            right: initial;
+
+            &-wrapper {
+                padding: 0;
+            }
+
+            &-item {
+                display: inline-block;
+                line-height: initial;
+                font-size: pxToRem(20);
+                margin-left: pxToRem(15);
+                padding: $padding-small;
+
+                &:hover {
+                    background:rgba($color-black, .2);
+                }
+            }
+
+            &-mobile {
+
+                &__open,
+                &__close {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
