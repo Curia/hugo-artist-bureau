@@ -2,7 +2,11 @@
 {{ partial "header" . }}
 
     <div class="video-hero">
-        <video loop="" autoplay="" playsinline="" muted="" style="opacity: 1;" src="./img/video.webm" poster=""></video>
+        <div class="video-hero__wrapper">
+            <video loop="" autoplay="" playsinline="" muted="" style="opacity: 1;" poster="">
+                <source src="http://localhost:3002/img/video.webm" type="video/webm">
+            </video>
+        </div>
     </div>
 
 {{ partial "footer" . }}
