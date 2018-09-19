@@ -1,0 +1,28 @@
+---
+label: Portfolio item
+hide_body: false
+is_partial: false
+fields:
+- type: file
+  name: portfolio_thumbnail
+  label: Portfolio thumbnail
+  description: Display image for portfolio
+- type: select
+  name: media_type
+  config:
+    source:
+      type: simple
+    options:
+    - Youtube
+    - Image
+    - Audio
+  label: Media type
+  description: Select type of media
+- type: textarea
+  name: portfolio_details
+  label: Portfolio details
+  description: Free text area for portfolio item
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
