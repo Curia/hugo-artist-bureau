@@ -26,3 +26,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- hugo/content/posts/Portfolio-item-1.md
