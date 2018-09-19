@@ -18,13 +18,5 @@ fields:
     - Audio
   label: Media type
   description: Select type of media
-- type: textarea
-  name: portfolio_details
-  label: Portfolio details
-  description: Free text area for portfolio item
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
 pages:
 - hugo/content/posts/Portfolio-item-1.md
