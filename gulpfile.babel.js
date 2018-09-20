@@ -41,7 +41,7 @@ gulp.task("generator", cb => build(cb))
  * compiles the static site
  */
 gulp.task("build", ["clean"], cb => {
-  runsequence(["styles", "scripts", "images", "svg"], "generator", cb)
+  runsequence(["styles", "scripts", "images", "uploads", "svg"], "generator", cb)
 })
 
 /**
@@ -229,6 +229,20 @@ gulp.task("images", () => {
     .pipe(gulp.dest(gulpConfig.images.dest))
     .pipe(browserSync.stream())
 })
+
+/**
+ * @task uploads
+ * Optimizes all images
+ * and streams it if its a development server environment
+ */
+gulp.task("uploads", () => {
+    return gulp
+      .src(gulpConfig.uploads.src)
+      .pipe(newer(gulpConfig.uploads.dest))
+      .pipe(imagemin([], {verbose: isProduction ? true : false}))
+      .pipe(gulp.dest(gulpConfig.uploads.dest))
+      .pipe(browserSync.stream())
+  })
 
 /**
  * @task svg

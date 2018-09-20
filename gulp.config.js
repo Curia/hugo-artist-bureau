@@ -42,6 +42,11 @@ export default function(env) {
       watch: src + "img/**/*.+(png|jpg|jpeg|gif|svg|webp)",
       dest: dest + "static/img/"
     },
+    uploads: {
+        src: dest + "uploads/**/*.+(png|jpg|jpeg|gif|svg|webp)",
+        watch: dest + "uploads/**/*.+(png|jpg|jpeg|gif|svg|webp)",
+        dest: build + "uploads/"
+    },
     svg: {
       src: src + "img/**/*.svg",
       watch: src + "img/**/*.svg",
