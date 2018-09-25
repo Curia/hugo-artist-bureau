@@ -9,4 +9,16 @@
         </div>
     </div>
 
+    <div class="gallery-items">
+        {{ range .Data.Pages }}
+            <div class="gallery-items__item">
+                <div class="gallery-items__item-banner" style="background-image:url({{ .Params.portfolio_thumbnail | safeCSS }});"></div>
+                <div class="gallery-items__item-description">
+                    <h2>Client + {{ .Title }}</h2>
+                     {{ .Params.media_type }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
+
 {{ partial "footer" . }}

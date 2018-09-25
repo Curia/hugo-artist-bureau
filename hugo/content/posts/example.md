@@ -1,6 +1,11 @@
----
-title:  "Welcome to Hugo!"
----
++++
+date = "2018-09-19T07:29:45+00:00"
+draft = true
+media_type = "Youtube"
+portfolio_thumbnail = "/uploads/2018/09/19/portfolio-1.jpg"
+title = "Portfolio item 1"
+
++++
 You’ll find this post in your `content/posts` directory.
 
 To add new posts, simply add a file in the `content/posts` directory that follows the convention `name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.

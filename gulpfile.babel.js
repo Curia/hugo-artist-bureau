@@ -238,8 +238,6 @@ gulp.task("images", () => {
 gulp.task("uploads", () => {
     return gulp
       .src(gulpConfig.uploads.src)
-      .pipe(newer(gulpConfig.uploads.dest))
-      .pipe(imagemin([], {verbose: isProduction ? true : false}))
       .pipe(gulp.dest(gulpConfig.uploads.dest))
       .pipe(browserSync.stream())
   })

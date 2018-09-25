@@ -1,9 +1,9 @@
 +++
-date = "2018-07-17T06:22:18+00:00"
+date = "2018-09-19T07:29:45+00:00"
 draft = true
-post_image = ""
-post_name = "Sample post"
-title = "Forestry test"
+media_type = "Youtube"
+portfolio_thumbnail = "/uploads/2018/09/19/portfolio-1.jpg"
+title = "Portfolio item 1"
 
 +++
 # Lorem ipsum dolar

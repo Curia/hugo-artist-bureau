@@ -1,15 +1,11 @@
----
-title: "Hello Hugo!"
-description: "Saying 'Hello' from Hugo"
-date: "2014-09-01"
-categories:
-  - "example"
-  - "hello"
-tags:
-  - "example"
-  - "hugo"
-  - "blog"
----
++++
+date = "2018-09-19T07:29:45+00:00"
+draft = true
+media_type = "Youtube"
+portfolio_thumbnail = "/uploads/2018/09/19/portfolio-1.jpg"
+title = "Portfolio item 1"
+
++++
 
 Hello from Hugo! If you're reading this in your browser, good job! The file `content/post/hello-hugo.md` has been
 converted into a complete HTML document by Hugo. Isn't that pretty nifty?
