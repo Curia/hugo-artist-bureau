@@ -3,6 +3,10 @@ label: Portfolio item
 hide_body: false
 is_partial: false
 fields:
+- type: text
+  label: Client Name
+  name: client_name
+  description: Name of client
 - type: file
   name: portfolio_thumbnail
   label: Portfolio thumbnail
