@@ -23,5 +23,6 @@ fields:
   label: Media type
   description: Select type of media
 pages:
+- hugo/content/posts/strider.md
 - hugo/content/posts/sigma-sine-lens.md
 - hugo/content/posts/Portfolio-item-1.md

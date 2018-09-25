@@ -6,7 +6,6 @@ portfolio_thumbnail = "/uploads/2018/09/19/portfolio-1.jpg"
 title = "Portfolio item 1"
 
 +++
-
 Hello from Hugo! If you're reading this in your browser, good job! The file `content/post/hello-hugo.md` has been
 converted into a complete HTML document by Hugo. Isn't that pretty nifty?
 
