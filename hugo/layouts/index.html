@@ -1,24 +1,15 @@
 {{ partial "head" . }}
 {{ partial "header" . }}
 
-    <div class="video-hero">
-        <div class="video-hero__wrapper">
-            <video loop="" autoplay="" playsinline="" muted="" style="opacity: 1;" poster="">
-                <source src="/img/video.webm" type="video/webm">
-            </video>
-        </div>
-    </div>
-
-    <div class="gallery-items">
-        {{ range .Data.Pages }}
-            <div class="gallery-items__item">
-                <div class="gallery-items__item-banner" style="background-image:url({{ .Params.portfolio_thumbnail | safeCSS }});"></div>
-                <div class="gallery-items__item-description">
-                    <h2>Client + {{ .Title }}</h2>
-                     {{ .Params.media_type }}
+    <div id="main" class="main">
+        <div class="fullpage">
+            {{ range .Data.Pages }}
+                <div class="section">
+                    <h2>{{ .Title }}</h2>
                 </div>
-            </div>
-        {{ end }}
+                <div class="gallery-items__item-banner" style="background-image:url({{ .Params.portfolio_thumbnail | safeCSS }});"></div>
+            {{ end }}
+        </div>
     </div>
 
 {{ partial "footer" . }}

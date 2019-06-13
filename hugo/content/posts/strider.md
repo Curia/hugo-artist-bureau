@@ -4,7 +4,7 @@ date = "2018-09-19T07:29:45+00:00"
 draft = true
 media_type = "Youtube"
 portfolio_thumbnail = "/uploads/2018/09/19/portfolio-1.jpg"
-title = "Portfolio item 1"
+title = "Strider"
 
 +++
 Hello from Hugo! If you're reading this in your browser, good job! The file `content/post/hello-hugo.md` has been

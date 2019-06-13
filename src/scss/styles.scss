@@ -4,7 +4,9 @@
 @import "imports/grid";
 @import "imports/fonts";
 
+// Plugins
+@import "../modules/artist-slide/fullscreen";
+
+// Components
 @import "../modules/global-header/global-header";
-@import "../modules/video-hero/video-hero";
-@import "../modules/gallery-item/gallery-item";
-/* Base styling */
+@import "../modules/artist-slide/artist-slide";
