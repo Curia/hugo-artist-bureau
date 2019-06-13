@@ -1,3 +1,22 @@
-body {
-    background: honeydew;
+.artist-slide {
+    padding: $padding-medium;
+
+    &__body {
+        background: $swatch-alto;
+        height:     100%;
+        padding:    $padding-small;
+    }
+
+    &__heading {
+        font-size:      pxToRem(16);
+        font-weight:    $font-weight-base;
+        margin:         0;
+        padding:        0;
+        text-transform: uppercase;
+    }
+
+    &__type {
+        font-size:      pxToRem(14);
+        text-transform: none;
+    }
 }

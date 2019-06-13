@@ -2,7 +2,7 @@
 client_name = "Sigma"
 date = "2018-09-19T07:29:45+00:00"
 draft = true
-media_type = "Youtube"
+media_type = "Video"
 portfolio_thumbnail = "/uploads/2018/09/19/portfolio-1.jpg"
 title = "Sigma Cine Lens"
 

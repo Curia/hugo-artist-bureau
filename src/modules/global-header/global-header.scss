@@ -23,7 +23,6 @@ BASE/MOBILE
 
     &__nav {
         background: $swatch-grey;
-        background: $swatch-white;
         height:     100%;
         max-width:  360px;
         overflow-y: auto;
@@ -40,8 +39,8 @@ BASE/MOBILE
 
         &-wrapper {
             display:     block;
-            padding-top: calc(100vh / 4);
             padding:     $padding-medium;
+            padding-top: $padding-medium + 35;
             text-align:  right;
         }
 
