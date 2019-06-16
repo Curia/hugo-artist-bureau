@@ -1,8 +1,8 @@
 .artist-slide {
     padding: $padding-medium;
+    background: $swatch-alto;
 
     &__body {
-        //background: $swatch-alto;
         height:     100%;
         position: relative;
         display: flex;
@@ -74,5 +74,26 @@ MEDIUM
 */
 
 @media screen and (min-width: $medium-breakpoint)  {
+    .artist-slide {
+        background: none;
+    
+        &__body {
+            background: $swatch-alto;
+            padding: $padding-medium;
+        }
 
+        &__heading {
+            text-align: center;
+        }
+
+        &__type {
+            display: inline;
+        }
+
+        &__background {
+            max-width: pxToRem(1080);
+            left: 50%;
+            transform: translate(-50%, 0)
+        }
+    }
 }
