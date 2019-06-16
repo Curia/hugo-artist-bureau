@@ -1,0 +1,57 @@
+.tingle-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+
+    &__close {
+        background: transparent;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 1.6rem;
+        left: initial;
+
+        &Icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 20px;
+            margin-right: 0;
+        }
+
+        &Label{
+            display: none;
+        }
+    }
+
+    &-box {
+        width: 90%;
+        max-width: pxToRem(1080);
+        margin: 0 auto;
+        border-radius: 0;
+
+        &__content {
+            padding: $padding-small;
+        }
+    }
+}
+
+.modal {
+
+    &__wrapper {
+        height: 0;
+        overflow: hidden;
+        padding-top: 591.44px / 1127.34px * 100%;
+        background: white;
+        position: relative;
+    }
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
