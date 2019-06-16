@@ -4,12 +4,13 @@
     <div id="main" class="main">
         <div class="fullpage">
             {{ range .Data.Pages }}
-                <div class="artist-slide section">
-                    <div class="artist-slide__body">
-                        <h2 class="artist-slide__heading">{{ .Title }} <span class="artist-slide__type">{{.Params.media_type}}</span></h2>
-                        <div class="gallery-items__item-banner" style="background-image:url({{ .Params.portfolio_thumbnail | safeCSS }});"></div>
-                    </div>
-                </div>
+
+                {{ if eq .Params.media_type "video" }}
+                    {{ partial "artist-slides/slide-video" . }}
+                {{ else }}
+                    {{ partial "artist-slides/slide-default" . }}
+                {{ end }}
+                
             {{ end }}
         </div>
     </div>
