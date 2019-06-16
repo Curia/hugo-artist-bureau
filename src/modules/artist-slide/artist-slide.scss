@@ -2,21 +2,77 @@
     padding: $padding-medium;
 
     &__body {
-        background: $swatch-alto;
+        //background: $swatch-alto;
         height:     100%;
-        padding:    $padding-small;
+        position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
     &__heading {
-        font-size:      pxToRem(16);
+        font-size:      pxToRem(34);
         font-weight:    $font-weight-base;
         margin:         0;
-        padding:        0;
+        padding:        $padding-small;
+        padding-left:   0;
         text-transform: uppercase;
     }
 
     &__type {
-        font-size:      pxToRem(14);
-        text-transform: none;
+        font-size:      pxToRem(20);
+        display:        block;
     }
+
+    &__background {
+        flex: 2;
+        position: relative;
+    }
+}
+
+.slide-background {
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    &__play {
+        background: $swatch-white;
+        -webkit-mask: url(../../img/svg/play-circle.svg) no-repeat 50% 50%;
+        mask: url(../../img/svg/play-circle.svg) no-repeat 50% 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 32px;
+        width: 32px;
+        transform: translate(-50%, -50%);
+
+        &.active {
+            display: none;
+        }
+    }
+
+    &__video {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+/*
+MEDIUM
+*/
+
+@media screen and (min-width: $medium-breakpoint)  {
+
 }

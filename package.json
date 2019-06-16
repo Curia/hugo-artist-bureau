@@ -76,7 +76,8 @@
     "vinyl-named": "^1.1.0",
     "webpack": "3.6.0",
     "webpack-stream": "^4.0.0",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "youtube-player": "^5.5.2"
   },
   "dependencies": {
     "animejs": "^2.2.0"
