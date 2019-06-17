@@ -1,6 +1,6 @@
 <header id="header" class="header">
     <a href="{{ .Site.BaseURL }}" class="header__logo">
-        {{ .Site.Title}}
+        {{ partial "svg" (dict "id" "svg--logo" "class" "header__logo") -}}
     </a>
     {{ partial "svg" (dict "id" "svg--menu" "class" "header__nav-mobile__open" "width" 32 "height" 32) -}}
     <div class="header__nav">

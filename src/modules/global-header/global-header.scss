@@ -19,6 +19,7 @@ BASE/MOBILE
         font-size:       pxToRem(22);
         text-decoration: none;
         text-transform:  uppercase;
+        height: 34px;
     }
 
     &__nav {
@@ -31,6 +32,7 @@ BASE/MOBILE
         top:        0;
         transition: right .5s ease;
         width:      100%;
+        text-transform: uppercase;
 
         &.active {
             right:      0%;
