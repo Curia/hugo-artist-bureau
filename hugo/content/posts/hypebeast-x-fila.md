@@ -7,4 +7,7 @@ portfolio_thumbnail = "/uploads/2018/09/19/hypebeast.jpg"
 youtube_id = "iolhJwn5GeU"
 title = "Make Noise"
 
+content_producer = "Artist Bureau Inc (AtoM)"
+content_director = "Roni Shao"
+content_music = "Bohan Phoenix"
 +++

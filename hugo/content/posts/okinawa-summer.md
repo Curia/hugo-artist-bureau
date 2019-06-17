@@ -7,4 +7,7 @@ portfolio_thumbnail = "/uploads/2018/09/19/okinawa.jpg"
 youtube_id = "04H3Z61yEzo"
 title = "OKINAWA SUMMER"
 
+content_producer = "Artist Bureau Inc"
+content_director = "Jimmy Ming Shum"
+content_music = "Bohan Phoenix"
 +++

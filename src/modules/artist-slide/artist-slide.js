@@ -7,6 +7,8 @@ const fullPageInstance = new fullpage('.fullpage', {
     css3: true,
     paddingTop: pageMargin(),
     autoScrolling: false,
+    scrollOverflow: true,
+    autoScrolling: false,
     afterResize: function(width, height){
         fullpage_api.reBuild();
     }
