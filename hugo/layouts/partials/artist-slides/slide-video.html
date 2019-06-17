@@ -1,10 +1,15 @@
 <div class="artist-slide section">
     <div class="artist-slide__body">
-        <h2 class="artist-slide__heading">{{ .Title }} <span class="artist-slide__type">{{.Params.media_type}}</span></h2>
-        <div class="artist-slide__background">
+
+        <a class="artist-slide__link" href="{{.Permalink}}">
+            <h2 class="artist-slide__heading">{{ .Title }} <span class="artist-slide__type">{{.Params.media_type}}</span></h2>
+        </a>
+        
+        <a class="artist-slide__background" href="{{.Permalink}}">
             <div class="slide-background__image" style="background-image:url({{ .Params.portfolio_thumbnail | safeCSS }});"></div>
             <div class="slide-background__video"></div>
             <span class="slide-background__play" data-youtube="{{.Params.youtube_id}}"></span>
-        </div>
+        </a>
+
     </div>
 </div>

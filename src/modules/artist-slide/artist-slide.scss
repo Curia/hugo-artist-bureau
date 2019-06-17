@@ -10,12 +10,13 @@
     }
 
     &__heading {
-        font-size:      pxToRem(34);
+        font-size:      pxToRem(28);
         font-weight:    $font-weight-base;
         margin:         0;
         padding:        $padding-small;
         padding-left:   0;
         text-transform: uppercase;
+        text-decoration: none;
     }
 
     &__type {
@@ -26,6 +27,16 @@
     &__background {
         flex: 2;
         position: relative;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: inherit;  
+    }
+
+    &__content {
+        max-width: pxToRem(1080);
+        margin: 0 auto;
     }
 }
 

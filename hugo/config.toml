@@ -52,25 +52,25 @@ author = "Your name"
   name = "Video + Print"
   weight = 2
   identifier = "media"
-  url = "/"
+  url = "/media"
   pre = ""
 [[menu.main]]
   name = "Audio"
   weight = 3
   identifier = "audio"
-  url = "/"
+  url = "/audio"
   pre = ""
 [[menu.main]]
   name = "About"
   weight = 4
   identifier = "about"
-  url = "/"
+  url = "/about"
   pre = ""
 [[menu.main]]
   name = "Contact"
   weight = 5
   identifier = "contact"
-  url = "/"
+  url = "/contact"
   pre = ""
 
 
