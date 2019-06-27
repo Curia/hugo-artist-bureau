@@ -3,7 +3,7 @@
 
     <div id="main" class="main">
         <div class="fullpage">
-            {{ range first 10 .Data.Pages }}
+            {{ range .Data.Pages }}
 
                 {{ if eq .Params.media_type "video" }}
                     {{ partial "artist-slides/slide-video" . }}
