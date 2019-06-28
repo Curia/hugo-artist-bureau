@@ -3,7 +3,7 @@ client_name = "Strider Japan"
 date = "2019-09-09T07:29:45+00:00"
 draft = false
 media_type = "music"
-portfolio_thumbnail = "/uploads/2018/09/19/biotherm.jpg"
+portfolio_thumbnail = "/uploads/2018/09/19/strider.jpg"
 youtube_id = "7UZCPH3ISpk"
 title = "Strider [Step Out]"
 

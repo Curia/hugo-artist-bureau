@@ -130,6 +130,8 @@ MEDIUM
             left: 50%;
             transform: translate(-50%, 0);
             min-height: pxToRem(350);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }
