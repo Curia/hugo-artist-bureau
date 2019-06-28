@@ -1,0 +1,52 @@
+<div class="artist-slide section">
+    <div class="artist-slide__body">
+        <h2 class="artist-slide__heading">{{ .Title }}
+            {{ if eq .Params.media_type "video" }}
+                <span class="artist-slide__type">{{.Params.media_type}}</span>
+            {{ end }}  
+        </h2>
+        <div class="artist-slide__background">
+            <div class="slide-background__image" style="background-image:url({{ .Params.portfolio_thumbnail | safeCSS }});"></div>
+            {{ if eq .Params.media_type "video" }}
+            <div class="slide-background__video"></div>
+            <span class="slide-background__play" data-youtube="{{.Params.youtube_id}}"></span>
+            {{ end }}            
+        </div>
+        <div class="artist-slide__content">
+            <div class="content-details__left">
+                <h2 class="content-details__title">Client</h2>    
+                <ul>
+                    {{ if .Params.content_producer }}
+                    <li>Producer</li>
+                    {{ end }}
+                    {{ if .Params.content_director }}
+                    <li>Director</li>
+                    {{ end }}
+                    {{ if .Params.content_music }}
+                    <li>Music</li>
+                    {{ end }}
+                    {{ if .Params.content_coord }}
+                    <li>Coordination</li>
+                    {{ end }}
+                    {{ if .Params.content_model }}
+                    <li>Model</li>
+                    {{ end }}
+                    {{ if .Params.content_photographer }}
+                    <li>Photographer</li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="content-details__right">
+                <h2 class="content-details__title">{{ .Params.client_name}}</h2>    
+                <ul>
+                    <li>{{ .Params.content_producer }}</li>
+                    <li>{{ .Params.content_director }}</li>
+                    <li>{{ .Params.content_music }}</li>
+                    <li>{{ .Params.content_coord }}</li>
+                    <li>{{ .Params.content_model }}</li>
+                    <li>{{ .Params.content_photographer }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

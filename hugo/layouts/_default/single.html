@@ -3,13 +3,7 @@
 
 <div id="main" class="main">
     <div class="fullpage">
-
-        {{ if eq .Params.media_type "video" }}
-            {{ partial "artist-post/post-video" . }}
-        {{ else }}
-            {{ partial "artist-slides/slide-default" . }}
-        {{ end }}
-
+        {{ partial "artist-post/post-item" . }}
     </div>
 </div>
 {{ partial "footer" . }}
