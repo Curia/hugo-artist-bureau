@@ -40,16 +40,16 @@ Google search results) and in your RSS feed description.
 author = "A.Phillips"
 
 [[menu.main]]
-  name = "Home"
-  weight = 1
-  identifier = "home"
-  url = "/"
-
-[[menu.main]]
   name = "Video"
-  weight = 2
+  weight = 1
   identifier = "video"
   url = "/video/"
+
+[[menu.main]]
+  name = "Photo"
+  weight = 2
+  identifier = "photo"
+  url = "/photo/"
 
 [[menu.main]]
   name = "Music"
