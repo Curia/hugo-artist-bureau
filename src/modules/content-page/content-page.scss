@@ -1,0 +1,31 @@
+/*
+MOBILE
+*/
+
+.container.content-page {
+  margin-top: 85px;  
+}
+
+.content-page {
+
+  &__title {
+    
+    &-center {
+      text-align: center;
+      font-size: 45px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+/*
+MEDIUM
+*/
+
+@media screen and (min-width: $medium-breakpoint)  {
+
+  .container.content-page {
+    margin-top: 170px;  
+  }  
+}

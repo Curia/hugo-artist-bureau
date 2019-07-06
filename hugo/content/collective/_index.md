@@ -1,6 +1,9 @@
 ---
 title: "Homepage"
 ---
-Hello world! I'm `collective/_index.md`
 
-I'm rendered by `layouts/collective/list.html`
+## PHOTOGRAPHER  Frederic Aranda 
+[http://fredericaranda.com/](http://fredericaranda.com/)
+
+## COMPOSER  Takaya Takumi
+[https://www.bullnote.com/](https://www.bullnote.com/)
