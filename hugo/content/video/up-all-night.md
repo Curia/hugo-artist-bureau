@@ -4,6 +4,7 @@ post_client = "William Singe"
 post_thumbnail = "/uploads/2019/07/13/upallnight.jpg"
 post_video = "74RcNgPHhDM"
 title = "Up All Night"
+post_type = "video"
 [post_details]
 atom_coproduction = false
 details-artist = "William Singe"

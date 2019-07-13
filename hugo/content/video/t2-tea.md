@@ -4,6 +4,7 @@ post_client = "T2 Tea"
 post_thumbnail = "/uploads/2018/09/19/t2.jpg"
 post_video = "fDQUfetnQ2g"
 title = "T2 Tea"
+post_type = "video"
 [post_details]
 atom_coproduction = false
 details-artist = ""

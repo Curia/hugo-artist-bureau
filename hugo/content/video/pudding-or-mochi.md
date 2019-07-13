@@ -4,6 +4,7 @@ post_client = "5XPwmuElIOI"
 post_thumbnail = "/uploads/2019/07/13/arome2018.jpg"
 post_video = "5XPwmuElIOI"
 title = "Pudding or Mochi!"
+post_type = "video"
 [post_details]
 atom_coproduction = false
 details-artist = ""

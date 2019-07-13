@@ -4,6 +4,7 @@ post_client = "Red Bull Records"
 post_thumbnail = "/uploads/2019/07/13/bloodonhands.jpg"
 post_video = "dyIBEMeP8sw"
 title = "Blood on My Hands feat. Awich"
+post_type = "video"
 [post_details]
 atom_coproduction = true
 details-artist = "August08 x Awich"

@@ -4,6 +4,7 @@ post_client = "arome Bakery"
 post_thumbnail = "/uploads/2019/07/13/ilovalice.jpg"
 post_video = ""
 title = "I love Alice"
+post_type = "video"
 [post_details]
 atom_coproduction = false
 details-artist = ""

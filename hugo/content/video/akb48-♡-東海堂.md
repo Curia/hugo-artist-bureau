@@ -4,6 +4,7 @@ post_client = "arome Bakery"
 post_thumbnail = "/uploads/2019/07/13/arome3.jpg"
 post_video = "-y9fB5-s0QA"
 title = "AKB48 ♡ 東海堂"
+post_type = "video"
 [post_details]
 atom_coproduction = false
 details-artist = ""

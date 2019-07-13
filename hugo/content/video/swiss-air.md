@@ -4,6 +4,7 @@ post_client = "Swiss Air"
 post_thumbnail = "/uploads/2018/09/19/swissair.jpg"
 post_video = "1IgXShFS-Iw"
 title = "Swiss Air"
+post_type = "video"
 [post_details]
 atom_coproduction = false
 details_coordinator = "Mari Murakami"

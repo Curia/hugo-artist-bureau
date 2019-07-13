@@ -4,6 +4,7 @@ post_client = "HYPEBEAST x FILA   (AtoM) "
 post_thumbnail = "/uploads/2018/09/19/hypebeast.jpg"
 post_video = "iolhJwn5GeU"
 title = "Make Noise"
+post_type = "video"
 [post_details]
 atom_coproduction = true
 details-artist = ""

@@ -4,6 +4,7 @@ post_client = "Dr.C:Labo"
 post_thumbnail = "/uploads/2018/09/19/drclab.jpg"
 post_video = "B5g_c01aTu0"
 title = "Dr.C:Labo"
+post_type = "video"
 [post_details]
 atom_coproduction = true
 details-artist = ""
