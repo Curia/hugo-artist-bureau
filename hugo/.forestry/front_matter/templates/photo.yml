@@ -81,3 +81,5 @@ fields:
     config:
       required: false
     label: Model
+pages:
+- hugo/content/photo/island-spirit.md
