@@ -82,6 +82,7 @@ fields:
       required: false
     label: Model
 pages:
+- hugo/content/photo/filling-pieces-ss19.md
 - hugo/content/photo/2017-fall-special-issue-the-power-of-dreams.md
 - hugo/content/photo/sub-age.md
 - hugo/content/photo/ssaw-autumn-winter-2017-2018.md
