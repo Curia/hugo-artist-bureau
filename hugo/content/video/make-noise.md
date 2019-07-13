@@ -7,7 +7,7 @@ title = "Make Noise"
 post_type = "video"
 [post_details]
 atom_coproduction = true
-details-artist = ""
+details_artist = ""
 details_coordinator = ""
 details_director = "Roni Shao"
 details_music = "Bohan Phoenix"

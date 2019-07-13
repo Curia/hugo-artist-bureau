@@ -7,7 +7,7 @@ title = "I love Alice"
 post_type = "video"
 [post_details]
 atom_coproduction = false
-details-artist = ""
+details_artist = ""
 details_coordinator = ""
 details_director = "Jimmy Ming Shum"
 details_music = ""

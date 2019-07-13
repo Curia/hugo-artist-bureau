@@ -7,7 +7,7 @@ title = "SIGMA CINE LENS High Speed Zoom Line"
 post_type = "video"
 [post_details]
 atom_coproduction = false
-details-artist = ""
+details_artist = ""
 details_coordinator = ""
 details_director = "Naoki Tomita"
 details_music = "Takaya Takumi"

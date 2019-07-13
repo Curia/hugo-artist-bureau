@@ -7,7 +7,7 @@ title = "Up All Night"
 post_type = "video"
 [post_details]
 atom_coproduction = false
-details-artist = "William Singe"
+details_artist = "William Singe"
 details_coordinator = ""
 details_director = "Alexsander Nikishin"
 details_music = ""

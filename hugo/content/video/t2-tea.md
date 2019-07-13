@@ -7,7 +7,7 @@ title = "T2 Tea"
 post_type = "video"
 [post_details]
 atom_coproduction = false
-details-artist = ""
+details_artist = ""
 details_coordinator = "Domestic/ Mari Murakami"
 details_director = "Domenico Bartolo"
 details_music = ""

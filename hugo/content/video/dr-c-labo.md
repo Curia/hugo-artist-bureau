@@ -7,7 +7,7 @@ title = "Dr.C:Labo"
 post_type = "video"
 [post_details]
 atom_coproduction = true
-details-artist = ""
+details_artist = ""
 details_coordinator = ""
 details_director = "Zhao dan"
 details_music = ""

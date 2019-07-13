@@ -61,7 +61,7 @@ fields:
     config:
       required: false
     label: music
-  - name: details-artist
+  - name: details_artist
     type: text
     config:
       required: false

@@ -7,7 +7,7 @@ title = "Blood on My Hands feat. Awich"
 post_type = "video"
 [post_details]
 atom_coproduction = true
-details-artist = "August08 x Awich"
+details_artist = "August08 x Awich"
 details_coordinator = ""
 details_director = "James Mao"
 details_music = ""
