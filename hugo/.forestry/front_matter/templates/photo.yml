@@ -1,0 +1,47 @@
+---
+label: Photo
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: post_client
+  label: post_client
+- type: file
+  name: post_thumbnail
+  label: post_thumbnail
+- type: text
+  name: post_video
+  label: post_video
+- type: text
+  name: title
+  label: title
+- type: text
+  name: post_type
+  label: post_type
+- type: field_group
+  name: post_details
+  label: post_details
+  fields:
+  - type: boolean
+    name: atom_coproduction
+    label: atom_coproduction
+  - type: text
+    name: details_artist
+    label: details_artist
+  - type: text
+    name: details_coordinator
+    label: details_coordinator
+  - type: text
+    name: details_director
+    label: details_director
+  - type: text
+    name: details_music
+    label: details_music
+  - type: text
+    name: details_producer
+    label: details_producer
+  - type: text
+    name: details_talent
+    label: details_talent
