@@ -1,13 +1,13 @@
 +++
 client_name = "Biotherm Homme"
-date = "2019-02-02T07:29:45+00:00"
-draft = false
-media_type = "video"
-portfolio_thumbnail = "/uploads/2018/09/19/biotherm.jpg"
-youtube_id = "P0n1lBtS0hA"
-title = "Biotherm Homme"
-
-content_producer = "Artist Bureau Inc"
 content_director = "Jimmy Ming Shum"
 content_music = "Takaya Takumi"
+content_producer = "Artist Bureau Inc"
+date = "2019-02-02T07:29:45+00:00"
+media_type = "video"
+portfolio_gallery = ["/uploads/2018/09/19/hypebeast.jpg", "/uploads/2018/09/19/caretta.jpg", "/uploads/2018/09/19/drclab.jpg"]
+portfolio_thumbnail = "/uploads/2018/09/19/biotherm.jpg"
+title = "Biotherm Homme"
+youtube_id = "P0n1lBtS0hA"
+
 +++

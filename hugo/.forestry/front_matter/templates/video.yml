@@ -33,3 +33,5 @@ fields:
   type: image_gallery
   config: {}
   label: Portfolio Gallery
+pages:
+- hugo/content/video/biotherm-homme.md
