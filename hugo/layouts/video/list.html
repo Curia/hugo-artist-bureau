@@ -3,14 +3,8 @@
 
     <div id="main" class="main">
         <div class="fullpage">
-            {{ range .Data.Pages }}
-
-                {{ if eq .Params.media_type "video" }}
-                    {{ partial "artist-slides/slide-video" . }}
-                {{ else }}
-                    {{ partial "artist-slides/slide-default" . }}
-                {{ end }}
-                
+            {{ range .Pages.ByDate }}
+                {{ partial "artist-slides/slide-video" . }} 
             {{ end }}
         </div>
     </div>
