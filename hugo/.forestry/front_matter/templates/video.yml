@@ -2,6 +2,22 @@
 label: Video
 hide_body: true
 fields:
+- name: post_type
+  type: select
+  default: video
+  config:
+    required: false
+    options:
+    - music
+    - video
+    - image
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  hidden: true
+  label: Post type
 - type: text
   name: title
   label: Post title
