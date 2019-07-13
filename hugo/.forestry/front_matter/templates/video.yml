@@ -3,11 +3,11 @@ label: Video
 hide_body: true
 fields:
 - type: text
-  name: post_title
+  name: title
   label: Post title
   description: Title of the post
 - type: datetime
-  name: post_date
+  name: date
   label: Post date
 - type: text
   name: post_client
