@@ -1,0 +1,31 @@
+---
+label: Video
+hide_body: true
+fields:
+- type: text
+  name: client_name
+  label: client_name
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: media_type
+  label: media_type
+- type: file
+  name: portfolio_thumbnail
+  label: portfolio_thumbnail
+- type: text
+  name: youtube_id
+  label: youtube_id
+- type: text
+  name: title
+  label: title
+- type: text
+  name: content_producer
+  label: content_producer
+- type: text
+  name: content_director
+  label: content_director
+- type: text
+  name: content_music
+  label: content_music
