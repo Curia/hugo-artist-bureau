@@ -3,36 +3,24 @@ label: Video
 hide_body: true
 fields:
 - type: text
-  name: client_name
-  label: client_name
+  name: post_title
+  label: Post title
+  description: Title of the post
 - type: datetime
-  name: date
-  label: date
+  name: post_date
+  label: Post date
+- type: text
+  name: post_client
+  label: Client name
+- type: file
+  name: post_thumbnail
+  label: Post thumbnail
+- type: text
+  name: post_video
+  label: Post youtube id
 - type: text
   name: media_type
   label: media_type
-- type: file
-  name: portfolio_thumbnail
-  label: portfolio_thumbnail
-- type: text
-  name: youtube_id
-  label: youtube_id
-- type: text
-  name: title
-  label: title
-- type: text
-  name: content_producer
-  label: content_producer
-- type: text
-  name: content_director
-  label: content_director
-- type: text
-  name: content_music
-  label: content_music
-- name: portfolio_gallery
-  type: image_gallery
-  config: {}
-  label: Portfolio Gallery
 - name: post_details
   type: field_group
   config: {}
