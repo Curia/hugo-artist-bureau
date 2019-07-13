@@ -15,6 +15,7 @@ post_video = "P0n1lBtS0hA"
 title = "Biotherm Homme"
 youtube_id = "P0n1lBtS0hA"
 [post_details]
+atom_coproduction = true
 co = ""
 details_coordinator = ""
 details_director = "Jimmy Ming Shum"
