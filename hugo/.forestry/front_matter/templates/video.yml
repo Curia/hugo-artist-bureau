@@ -52,6 +52,7 @@ fields:
     label: artist
   label: Post details
 pages:
+- hugo/content/video/t2-tea.md
 - hugo/content/video/make-noise.md
 - hugo/content/video/blood-on-my-hands-feat-awich.md
 - hugo/content/video/swiss-air.md
