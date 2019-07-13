@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: hogo/content/video
+  path: hugo/content/video
   label: Photo
   create: all
   match: "**/*"
