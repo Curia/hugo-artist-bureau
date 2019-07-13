@@ -1,7 +1,6 @@
 ---
 label: Portfolio item
 hide_body: false
-is_partial: false
 fields:
 - type: text
   label: Client Name
@@ -22,7 +21,3 @@ fields:
     - Audio
   label: Media type
   description: Select type of media
-pages:
-- hugo/content/posts/strider.md
-- hugo/content/posts/sigma-sine-lens.md
-- hugo/content/posts/Portfolio-item-1.md
