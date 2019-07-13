@@ -18,13 +18,13 @@ fields:
 - type: text
   name: post_video
   label: Post youtube id
-- type: text
-  name: media_type
-  label: media_type
 - name: post_details
   type: field_group
   config: {}
   fields:
+  - name: atom_coproduction
+    type: boolean
+    label: ATOM Co-production
   - name: details_director
     type: text
     config:
