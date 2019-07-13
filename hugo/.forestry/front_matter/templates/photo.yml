@@ -82,5 +82,6 @@ fields:
       required: false
     label: Model
 pages:
+- hugo/content/photo/group-a.md
 - hugo/content/photo/garage-magazine-10.md
 - hugo/content/photo/island-spirit.md
