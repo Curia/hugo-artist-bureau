@@ -20,6 +20,10 @@ fields:
 - type: text
   name: post_type
   label: post_type
+- name: post_gallery
+  type: image_gallery
+  config: {}
+  label: Post gallery
 - type: field_group
   name: post_details
   label: post_details
