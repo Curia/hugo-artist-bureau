@@ -3,7 +3,7 @@
 
     <div id="main" class="main">
         <div class="fullpage">
-            {{ range .Pages.ByDate }}
+            {{ range .Pages.ByDate.Reverse }}
                 {{ partial "artist-slides/slide-video" . }} 
             {{ end }}
         </div>
