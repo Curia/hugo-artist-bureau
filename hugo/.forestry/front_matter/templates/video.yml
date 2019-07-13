@@ -57,6 +57,7 @@ fields:
     label: talent
   label: Post details
 pages:
+- hugo/content/video/biotherm-homme.md
 - hugo/content/video/akb48-♡-東海堂.md
 - hugo/content/video/美人の赤苺.md
 - hugo/content/video/okinawa-summer.md
