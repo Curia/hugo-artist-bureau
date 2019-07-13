@@ -1,13 +1,13 @@
 <div class="artist-slide section">
     <div class="artist-slide__body">
         <h2 class="artist-slide__heading">{{ .Title }}
-            {{ if eq .Params.media_type "video" | or (eq .Params.media_type "music") }}
-                <span class="artist-slide__type">{{.Params.media_type}}</span>
+            {{ if eq .Params.post_type "video" | or (eq .Params.post_type "music") }}
+                <span class="artist-slide__type">{{.Params.post_type}}</span>
             {{ end }}  
         </h2>
         <div class="artist-slide__background">
-            <div class="slide-background__image" style="background-image:url({{ .Params.portfolio_thumbnail | safeCSS }});"></div>
-            {{ if eq .Params.media_type "video" | or (eq .Params.media_type "music") }}
+            <div class="slide-background__image" style="background-image:url({{ .Params.post_thumbnail | safeCSS }});"></div>
+            {{ if eq .Params.post_type "video" | or (eq .Params.post_type "music") }}
             <div class="slide-background__video"></div>
             <span class="slide-background__play" data-youtube="{{.Params.youtube_id}}"></span>
             {{ end }}            
