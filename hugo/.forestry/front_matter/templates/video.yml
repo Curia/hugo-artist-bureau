@@ -33,5 +33,30 @@ fields:
   type: image_gallery
   config: {}
   label: Portfolio Gallery
+- name: post_details
+  type: field_group
+  config: {}
+  fields:
+  - name: director
+    type: text
+    config:
+      required: false
+    label: director
+  - name: music
+    type: text
+    config:
+      required: false
+    label: music
+  - name: producer
+    type: text
+    config:
+      required: false
+    label: producer
+  - name: co
+    type: text
+    config:
+      required: false
+    label: coordinator
+  label: Post details
 pages:
 - hugo/content/video/biotherm-homme.md
