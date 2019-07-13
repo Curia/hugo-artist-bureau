@@ -1,5 +1,5 @@
 +++
-date = ""
+date = "2019-07-04T14:00:00+00:00"
 post_client = "SIGMA Corporation"
 post_thumbnail = "/uploads/2019/07/13/sigma.jpg"
 post_video = "HCA_k9ZBWbc"
