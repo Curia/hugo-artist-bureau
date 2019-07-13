@@ -29,3 +29,7 @@ fields:
 - type: text
   name: content_music
   label: content_music
+- name: portfolio_gallery
+  type: image_gallery
+  config: {}
+  label: Portfolio Gallery
