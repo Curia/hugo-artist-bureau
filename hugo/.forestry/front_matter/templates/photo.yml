@@ -2,50 +2,82 @@
 label: Photo
 hide_body: true
 fields:
-- type: datetime
-  name: date
-  label: date
-- type: text
-  name: post_client
-  label: post_client
-- type: file
-  name: post_thumbnail
-  label: post_thumbnail
-- type: text
-  name: post_video
-  label: post_video
+- name: post_type
+  type: select
+  default: photo
+  config:
+    required: false
+    options:
+    - video
+    - photo
+    - music
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  hidden: true
+  label: Post type
 - type: text
   name: title
-  label: title
+  label: Post title
+- type: datetime
+  name: date
+  label: Post date
 - type: text
-  name: post_type
-  label: post_type
+  name: post_client
+  label: Client name
+- type: file
+  name: post_thumbnail
+  label: Post thumbnail
 - name: post_gallery
   type: image_gallery
   config: {}
   label: Post gallery
 - type: field_group
   name: post_details
-  label: post_details
+  label: Post details
   fields:
   - type: boolean
     name: atom_coproduction
-    label: atom_coproduction
-  - type: text
-    name: details_artist
-    label: details_artist
-  - type: text
-    name: details_coordinator
-    label: details_coordinator
-  - type: text
-    name: details_director
-    label: details_director
-  - type: text
-    name: details_music
-    label: details_music
-  - type: text
-    name: details_producer
-    label: details_producer
-  - type: text
-    name: details_talent
-    label: details_talent
+    label: ATOM Co-production
+  - name: details_production
+    type: text
+    config:
+      required: false
+    label: Production
+  - name: details_production_assistants
+    type: text
+    config:
+      required: false
+    label: Production assistants
+  - name: details_casting
+    type: text
+    config:
+      required: false
+    label: Casting
+  - name: details_styling
+    type: text
+    config:
+      required: false
+    label: Styling
+  - name: details_art_director
+    type: text
+    config:
+      required: false
+    label: Art director
+  - name: details_photogaphy
+    type: text
+    config:
+      required: false
+    label: Photogaphy
+  - name: hair_and_makeup
+    type: text
+    config:
+      required: false
+    label: Hair and Makeup
+  - name: details_model
+    type: text
+    config:
+      required: false
+    label: Model
