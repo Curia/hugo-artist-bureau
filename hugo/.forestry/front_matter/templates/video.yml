@@ -57,6 +57,7 @@ fields:
     label: talent
   label: Post details
 pages:
+- hugo/content/video/i-love-alice.md
 - hugo/content/video/up-all-night.md
 - hugo/content/video/pudding-or-mochi.md
 - hugo/content/video/dr-c-labo.md
