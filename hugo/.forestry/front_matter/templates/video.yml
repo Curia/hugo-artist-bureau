@@ -45,6 +45,11 @@ fields:
     config:
       required: false
     label: music
+  - name: details-artist
+    type: text
+    config:
+      required: false
+    label: artist
   label: Post details
 pages:
 - hugo/content/video/blood-on-my-hands-feat-awich.md
