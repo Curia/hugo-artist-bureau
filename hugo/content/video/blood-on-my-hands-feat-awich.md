@@ -1,8 +1,7 @@
 +++
 date = "2019-07-11T14:00:00+00:00"
-draft = true
 post_client = "Red Bull Records"
-post_thumbnail = ""
+post_thumbnail = "/uploads/2019/07/13/bloodonhands.jpg"
 post_video = "dyIBEMeP8sw"
 title = "Blood on My Hands feat. Awich"
 [post_details]
