@@ -25,22 +25,22 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: director
+  - name: details_director
     type: text
     config:
       required: false
     label: director
-  - name: music
+  - name: details_music
     type: text
     config:
       required: false
     label: music
-  - name: producer
+  - name: details_producer
     type: text
     config:
       required: false
     label: producer
-  - name: co
+  - name: details_coordinator
     type: text
     config:
       required: false
