@@ -50,6 +50,11 @@ fields:
     config:
       required: false
     label: artist
+  - name: details_talent
+    type: text
+    config:
+      required: false
+    label: talent
   label: Post details
 pages:
 - hugo/content/video/pudding-or-mochi.md
