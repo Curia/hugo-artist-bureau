@@ -9,6 +9,8 @@ sections:
   label: Video
   create: documents
   match: "**/*"
+  templates:
+  - video
 - type: directory
   path: hugo/content
   label: Pages
