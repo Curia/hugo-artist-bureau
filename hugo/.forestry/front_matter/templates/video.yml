@@ -25,26 +25,26 @@ fields:
   - name: atom_coproduction
     type: boolean
     label: ATOM Co-production
-  - name: details_director
-    type: text
-    config:
-      required: false
-    label: director
-  - name: details_music
-    type: text
-    config:
-      required: false
-    label: music
   - name: details_producer
     type: text
     config:
       required: false
     label: producer
+  - name: details_director
+    type: text
+    config:
+      required: false
+    label: director
   - name: details_coordinator
     type: text
     config:
       required: false
     label: coordinator
+  - name: details_music
+    type: text
+    config:
+      required: false
+    label: music
   label: Post details
 pages:
 - hugo/content/video/swiss-air.md
