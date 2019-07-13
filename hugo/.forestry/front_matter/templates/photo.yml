@@ -82,6 +82,7 @@ fields:
       required: false
     label: Model
 pages:
+- hugo/content/photo/ssaw-autumn-winter-2017-2018.md
 - hugo/content/photo/group-a.md
 - hugo/content/photo/garage-magazine-10.md
 - hugo/content/photo/island-spirit.md
