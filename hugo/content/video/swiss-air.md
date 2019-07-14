@@ -5,12 +5,6 @@ post_thumbnail = "/uploads/2018/09/19/swissair.jpg"
 post_type = "video"
 post_video = "1IgXShFS-Iw"
 title = "Swiss Air"
-[post_details]
-atom_coproduction = false
-details_coordinator = "Mari Murakami"
-details_director = "Sonja Heiss"
-details_music = ""
-details_producer = "Berlin - Loc"
 [post_details_0]
 details_title = "Production"
 details_value = "Berlin - Loc"

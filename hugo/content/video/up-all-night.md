@@ -5,14 +5,6 @@ post_thumbnail = "/uploads/2019/07/13/upallnight.jpg"
 post_type = "video"
 post_video = "74RcNgPHhDM"
 title = "Up All Night"
-[post_details]
-atom_coproduction = false
-details_artist = "William Singe"
-details_coordinator = ""
-details_director = "Alexsander Nikishin"
-details_music = ""
-details_producer = "Artist Bureau Inc."
-details_talent = ""
 [post_details_0]
 details_title = "Artist"
 details_value = "William Singe"

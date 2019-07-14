@@ -5,13 +5,6 @@ post_thumbnail = "/uploads/2019/07/13/bloodonhands.jpg"
 post_type = "video"
 post_video = "dyIBEMeP8sw"
 title = "Blood on My Hands feat. Awich"
-[post_details]
-atom_coproduction = true
-details_artist = "August08 x Awich"
-details_coordinator = ""
-details_director = "James Mao"
-details_music = ""
-details_producer = "88rising,  Domestic/ Artist Bureau Inc."
 [post_details_0]
 details_title = "Artist"
 details_value = "August08 x Awich"

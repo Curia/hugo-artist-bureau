@@ -5,14 +5,6 @@ post_thumbnail = "/uploads/2019/07/13/ilovalice.jpg"
 post_type = "video"
 post_video = "GVM7baD41tg"
 title = "I love Alice"
-[post_details]
-atom_coproduction = false
-details_artist = ""
-details_coordinator = ""
-details_director = "Jimmy Ming Shum"
-details_music = ""
-details_producer = "Artist Bureau Inc."
-details_talent = "Alice Hirose"
 [post_details_0]
 details_title = "Production"
 details_value = "Artist Bureau Inc."

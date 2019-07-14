@@ -5,13 +5,6 @@ post_thumbnail = "/uploads/2018/09/19/drclab.jpg"
 post_type = "video"
 post_video = "B5g_c01aTu0"
 title = "Dr.C:Labo"
-[post_details]
-atom_coproduction = true
-details_artist = ""
-details_coordinator = ""
-details_director = "Zhao dan"
-details_music = ""
-details_producer = "Artist Bureau Inc."
 [post_details_0]
 details_title = "Production"
 details_value = "Artist Bureau Inc."

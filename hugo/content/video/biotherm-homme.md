@@ -5,14 +5,6 @@ post_thumbnail = "/uploads/2018/09/19/biotherm.jpg"
 post_type = "video"
 post_video = "P0n1lBtS0hA"
 title = "Biotherm Homme"
-[post_details]
-atom_coproduction = false
-details_artist = ""
-details_coordinator = ""
-details_director = "Jimmy Ming Shum"
-details_music = "Takaya Takumi"
-details_producer = "Artist Bureau Inc."
-details_talent = ""
 [post_details_0]
 details_title = "Production"
 details_value = "Artist Bureau Inc."
