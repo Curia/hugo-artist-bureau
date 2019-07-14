@@ -64,6 +64,51 @@ fields:
       required: false
     label: Details value
   label: Post details
+- name: post_details_2
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
+- name: post_details_3
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
+- name: post_details_4
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
 pages:
 - hugo/content/video/swiss-air.md
 - hugo/content/video/blood-on-my-hands-feat-awich.md
