@@ -72,6 +72,24 @@ fields:
       required: false
     label: talent
   label: Post details
+- name: sample
+  type: field_group_list
+  fields:
+  - name: sample_title
+    type: text
+    config:
+      required: false
+    label: sample title
+  - name: sample_value
+    type: text
+    config:
+      required: false
+    label: sample value
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: sample
 pages:
 - hugo/content/video/swiss-air.md
 - hugo/content/video/blood-on-my-hands-feat-awich.md
