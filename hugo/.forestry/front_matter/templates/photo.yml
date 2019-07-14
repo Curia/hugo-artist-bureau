@@ -34,53 +34,81 @@ fields:
   type: image_gallery
   config: {}
   label: Post gallery
-- type: field_group
-  name: post_details
-  label: Post details
+- name: post_details_0
+  type: field_group
+  config: {}
   fields:
-  - type: boolean
-    name: atom_coproduction
-    label: ATOM Co-production
-  - name: details_production
+  - name: details_title
     type: text
     config:
       required: false
-    label: Production
-  - name: details_production_assistants
+    label: Details title
+  - name: details_value
     type: text
     config:
       required: false
-    label: Production assistants
-  - name: details_casting
+    label: Details value
+  label: Post details
+- name: post_details_1
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
     type: text
     config:
       required: false
-    label: Casting
-  - name: details_styling
+    label: Details title
+  - name: details_value
     type: text
     config:
       required: false
-    label: Styling
-  - name: details_art_director
+    label: Details value
+  label: Post details
+- name: post_details_2
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
     type: text
     config:
       required: false
-    label: Art director
-  - name: details_photogaphy
+    label: Details title
+  - name: details_value
     type: text
     config:
       required: false
-    label: Photogaphy
-  - name: hair_and_makeup
+    label: Details value
+  label: Post details
+- name: post_details_3
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
     type: text
     config:
       required: false
-    label: Hair and Makeup
-  - name: details_model
+    label: Details title
+  - name: details_value
     type: text
     config:
       required: false
-    label: Model
+    label: Details value
+  label: Post details
+- name: post_details_4
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
 pages:
 - hugo/content/photo/modern-weekly-china.md
 - hugo/content/photo/t-magazine.md
