@@ -110,6 +110,7 @@ fields:
     label: Details value
   label: Post details
 pages:
+- hugo/content/photo/island-spirit.md
 - hugo/content/photo/modern-weekly-china.md
 - hugo/content/photo/t-magazine.md
 - hugo/content/photo/filling-pieces-ss19.md
@@ -118,4 +119,3 @@ pages:
 - hugo/content/photo/ssaw-autumn-winter-2017-2018.md
 - hugo/content/photo/group-a.md
 - hugo/content/photo/garage-magazine-10.md
-- hugo/content/photo/island-spirit.md
