@@ -1,0 +1,11 @@
+<div class="artist-slide__background">
+    <!-- <div class="slide-background__image" style="background-image:url({{ .Params.post_thumbnail | safeCSS }});"></div> -->
+    <!-- Slider main container -->
+    <div class="photo-slider">
+        {{ range .Params.post_gallery }}
+            <div class="slide-item">
+                <img class="tns-lazy-img" data-src="{{ . | relURL }}" src="{{ . | relURL }}">
+            </div>
+        {{ end }}
+    </div>
+</div>

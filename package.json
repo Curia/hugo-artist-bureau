@@ -82,7 +82,7 @@
   "dependencies": {
     "animejs": "^2.2.0",
     "fullpage.js": "^3.0.5",
-    "swiper": "^4.5.0",
+    "tiny-slider": "^2.9.2",
     "youtube-player": "^5.5.2"
   }
 }

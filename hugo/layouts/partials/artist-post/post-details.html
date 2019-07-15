@@ -1,0 +1,42 @@
+<div class="artist-slide__content">
+    <div class="content-details__left">
+        <h2 class="content-details__title">Client</h2>
+        <ul>
+            {{ if .Params.post_details_0.details_title }}
+                <li>{{ .Params.post_details_0.details_title }}</li>
+            {{ end }}
+            {{ if .Params.post_details_1.details_title }}
+                <li>{{ .Params.post_details_1.details_title }}</li>
+            {{ end }}
+            {{ if .Params.post_details_2.details_title }}
+                <li>{{ .Params.post_details_2.details_title }}</li>
+            {{ end }}
+            {{ if .Params.post_details_3.details_title }}
+                <li>{{ .Params.post_details_3.details_title }}</li>
+            {{ end }}
+            {{ if .Params.post_details_4.details_title }}
+                <li>{{ .Params.post_details_4.details_title }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    <div class="content-details__right">
+        <h2 class="content-details__title">{{ .Params.post_client}}</h2>    
+        <ul>
+            {{ if .Params.post_details_0.details_value }}
+                <li>{{ .Params.post_details_0.details_value  }}</li>
+            {{ end }}
+            {{ if .Params.post_details_1.details_value }}
+                <li>{{ .Params.post_details_1.details_value }}</li>
+            {{ end }}
+            {{ if .Params.post_details_2.details_value }}
+                <li>{{ .Params.post_details_2.details_value }}</li>
+            {{ end }}
+            {{ if .Params.post_details_3.details_value }}
+                <li>{{ .Params.post_details_3.details_value }}</li>
+            {{ end }}
+            {{ if .Params.post_details_4.details_value }}
+                <li>{{ .Params.post_details_4.details_value }}</li>
+            {{ end }}
+        </ul>
+    </div>
+</div>

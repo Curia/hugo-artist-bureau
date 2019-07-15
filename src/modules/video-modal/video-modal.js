@@ -31,4 +31,7 @@ const loadVideos = (id) => {
     let player = YouTubePlayer('modal__video');
     player.loadVideoById(id);
 }
-setEvents();
+
+if(document.getElementsByClassName('slide-background__play').length) {
+    setEvents();
+}

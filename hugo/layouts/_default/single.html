@@ -3,7 +3,24 @@
 
 <div id="main" class="main">
     <div class="fullpage">
-        {{ partial "artist-post/post-item" . }}
+        
+        <div class="artist-slide section">
+            <div class="artist-slide__body">
+
+                {{ if eq .Params.post_type "video" | or (eq .Params.post_type "music") }}
+                    <h2 class="artist-slide__heading">{{ .Title }}
+                        <span class="artist-slide__type">{{.Params.post_type}}</span>
+                    </h2>
+                    {{ partial "artist-post/post-video" . }}
+                {{ else }}
+                    <h2 class="artist-slide__heading">{{ .Title }}</h2>
+                    {{ partial "artist-post/post-photo" . }}
+                {{ end }}  
+                
+                        
+            </div>
+        </div>
+
     </div>
 </div>
 {{ partial "footer" . }}
