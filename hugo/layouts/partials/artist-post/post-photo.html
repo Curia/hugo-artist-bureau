@@ -4,7 +4,9 @@
     <div class="photo-slider">
         {{ range .Params.post_gallery }}
             <div class="slide-item">
-                <img class="tns-lazy-img" data-src="{{ . | relURL }}" src="{{ . | relURL }}">
+                <div class="slide-item__wrap" style="background-image:url({{ . | relURL | safeCSS }});">
+                    <!--<img class="tns-lazy-img" data-src="{{ . | relURL }}" src="{{ . | relURL }}">-->
+                </div>
             </div>
         {{ end }}
     </div>
