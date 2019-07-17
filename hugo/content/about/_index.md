@@ -11,7 +11,7 @@ Artist Bureau Inc, founded in 1968 in Japan. We are a creative collective based 
 
 ## What we do
 
-* Production / Local Production, Casting.
+* Production / Local Production / Casting.
 * Coordination / Creative
 * Direction / Creative
 * Production / Music
