@@ -14,7 +14,6 @@ const setEvents = () => {
                 footer: false,
                 closeMethods: ['overlay', 'button', 'escape'],
                 onClose: () => {
-                    console.log('destroy');
                     vModal.destroy();
                 },
                 onOpen: () => {

@@ -17,6 +17,8 @@
         padding-left:   0;
         text-transform: uppercase;
         text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: 600
     }
 
     &__type {
@@ -45,7 +47,8 @@
 
         h2 {
             text-transform: uppercase;
-            font-weight: 400;
+            font-weight: 600;
+            letter-spacing: 2px;
 
             em {
                 margin-right: 60px;

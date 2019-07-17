@@ -12,9 +12,11 @@
                         <span class="artist-slide__type">{{.Params.post_type}}</span>
                     </h2>
                     {{ partial "artist-post/post-video" . }}
+                    {{ partial "artist-post/post-details" . }}
                 {{ else }}
                     <h2 class="artist-slide__heading">{{ .Title }}</h2>
                     {{ partial "artist-post/post-photo" . }}
+                    {{ partial "artist-post/post-details" . }}
                 {{ end }}  
                 
                         

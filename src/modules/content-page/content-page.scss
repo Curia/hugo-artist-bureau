@@ -8,13 +8,16 @@ MOBILE
 
 .content-page {
 
-  &__title {
-    
-    &-center {
-      text-align: center;
-      font-size: 45px;
-      text-transform: uppercase;
-    }
+  .col-12 {
+    background: $swatch-alto;
+    padding: $padding-medium;
+  }
+
+  h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
   }
 }
 
