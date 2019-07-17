@@ -21,7 +21,7 @@ sections:
   templates:
   - video
 - type: document
-  path: hugo/content/about
+  path: hugo/content/about/_index.md
   label: About Us
 upload_dir: hugo/uploads
 public_path: "/uploads"
