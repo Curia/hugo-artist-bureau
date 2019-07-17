@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: hugo/content/about
-  label: About Us
-  match: "**/*"
 - type: directory
   path: hugo/content/photo
   label: Photo
@@ -24,6 +20,9 @@ sections:
   exclude: _index.md
   templates:
   - video
+- type: document
+  path: hugo/content/about
+  label: About Us
 upload_dir: hugo/uploads
 public_path: "/uploads"
 front_matter_path: ''
