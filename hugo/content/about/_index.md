@@ -2,21 +2,21 @@
 title: About Us
 
 ---
-<h1 class="content-page__title-center">Who are we</h1>
+## Who are we
 
 Artist Bureau Inc, founded in 1968 in Japan. We are a creative collective based in Tokyo Japan, that can provide bilingual production, coordination and art direction to the exacting demands and requirements of the client.
 
 私たちは東京を拠点とするクリエイター集団です。  
 バイリンガル対応のプロダクション等で、クライアントの様々なご要望に確かに対応いたします
 
-<h1 class="content-page__title-center">What we do</h1>
+## What we do
 
 * Production / Local Production, Casting.
 * Coordination / Creative
 * Direction / Creative
 * Production / Music
 
-<h1 class="content-page__title-center">What is AB</h1>
+## What is AB
 
 Artist Bureau Inc.<br/>
 株式会社アーチスト・ビューロー
