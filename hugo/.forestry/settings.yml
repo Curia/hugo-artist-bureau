@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: hugo/content/about/**
+  path: hugo/content/about
   label: About Us
   match: "**/*"
 - type: directory
