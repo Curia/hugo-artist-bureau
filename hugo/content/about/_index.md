@@ -21,11 +21,9 @@ Artist Bureau Inc, founded in 1968 in Japan. We are a creative collective based 
 Artist Bureau Inc.<br/>
 株式会社アーチスト・ビューロー
 
-Artist Bureau Head Office<br/>
+Artist Bureau Head Office:<br/>
 
-東京都世田谷区駒沢2-8-16, 2F 154-0012
-
-2F 2-8-16,Komazawa,Setagaya,Tokyo. Japan.
+東京都世田谷区駒沢2-8-16, 2F 154-0012<br/>2F 2-8-16,Komazawa,Setagaya,Tokyo. Japan.
 
 Foundation: 1968  
 1968年創立
