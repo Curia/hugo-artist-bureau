@@ -23,7 +23,6 @@ sections:
 - type: document
   path: hugo/content/collective/_index.md
   label: Collective
-  match: "**/*"
 - type: document
   path: hugo/content/about/_index.md
   label: About Us
