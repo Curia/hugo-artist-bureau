@@ -1,5 +1,6 @@
 ---
-title: "Homepage"
+title: About Us
+
 ---
 <h1 class="content-page__title-center">Who are we</h1>
 
