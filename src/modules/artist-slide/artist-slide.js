@@ -11,7 +11,7 @@ const buildSlider = () => {
         loop: true,
         autoHeight: true,
         nav: false,
-        //controls: false
+        controlsText: ["",""]
     });
 }
 
