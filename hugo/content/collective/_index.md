@@ -1,7 +1,7 @@
 ---
-title: "Homepage"
----
+title: Collective
 
+---
 ## PHOTOGRAPHER  Frederic Aranda 
 [http://fredericaranda.com/](http://fredericaranda.com/)
 
