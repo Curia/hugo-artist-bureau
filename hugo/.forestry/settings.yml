@@ -21,6 +21,10 @@ sections:
   templates:
   - video
 - type: document
+  path: hugo/content/collective/_index.md
+  label: Collective
+  match: "**/*"
+- type: document
   path: hugo/content/about/_index.md
   label: About Us
 upload_dir: hugo/uploads
