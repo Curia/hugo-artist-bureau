@@ -21,14 +21,17 @@ Artist Bureau Inc, founded in 1968 in Japan. We are a creative collective based 
 Artist Bureau Inc.<br/>
 株式会社アーチスト・ビューロー
 
-Head Office 2-6-7 Komazawa,Setagaya,Tokyo. Japan  
-所在地：東京都世田谷区駒沢2-8-16
+Artist Bureau Head Office<br/>
 
-Foundation 1968  
+東京都世田谷区駒沢2-8-16, 2F 154-0012
+
+2F 2-8-16,Komazawa,Setagaya,Tokyo. Japan.
+
+Foundation: 1968  
 1968年創立
 
 Capital: 20 million yen  
 資本金: 2000万円
 
-CEO Takaya Murakami  
- 代表: 村上　卓也
+CEO: Takaya Murakami  
+代表: 村上　卓也
