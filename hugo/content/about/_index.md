@@ -33,3 +33,62 @@ Capital: 20 million yen
 
 CEO: Takaya Murakami  
 代表: 村上　卓也
+
+## Our Clients
+
+* amana inc.
+* BB media
+* CONDE NAST JAPAN
+* Daiko Advertising Inc.
+* DDB Group Hong Kong.
+* Dentsu Inc.
+* HAKUHODO Inc.
+* Hearst Fujingaho Co., Ltd.
+* HYPEBEAST
+* JR Kyushu Agency Co., Ltd.
+* Turn creative Ltd.
+* Adidas AG
+* Arome Bakery
+* Astellas Pharma Inc.
+* Aviva Co.,Ltd.
+* BOOKOFF GROUP HOLDINGS LIMITED
+* Canon Inc.
+* Caretta Shiodome
+* DHC Corporation
+* Dr. Ci:Labo Co., Ltd.
+* East Japan Railway Company
+* EDION Corporation
+* Gakken Holdings Company, Limited
+* Guam Visitors Bureau
+* Hirakata Park
+* HISAMITSU PHARMACEUTICAL CO.,INC.
+* Hitachi, Ltd.
+* Hotels.com L.P
+* Inaba Foods Co., Ltd.
+* JKA
+* Kao Corporation
+* KDDI CORPORATION
+* Kissei Pharmaceutical Co., Ltd.
+* Kowa Company, Limited
+* Kyushu Railway Company
+* L'Oréal S.A.
+* Labour Bank／Worker's Credit Union
+* LAWSON, INC.
+* LIXIL Corporation
+* Mitsubishi Electric Corporation
+* Mitsubishi Motors Corporation
+* Nike, Inc.
+* NIPPON KANZAI Co., Ltd.
+* Nisshin Fire & Marine Insurance Co.,Ltd.
+* Novartis International AG
+* Olympus Corporation
+* Panasonic Corporation
+* RIKEN VITAMIN CO., LTD.
+* Seven & i Holdings Co., Ltd.
+* SIGMA Corporation
+* Swissair
+* TAIHO Phamaceutical Co.,Ltd.
+* TAISEI CORPORATION
+* Teijin Limited
+* The Walt Disney Company (Japan) Ltd.
+* Under Armour Inc.
