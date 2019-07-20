@@ -1,0 +1,111 @@
+---
+label: Music
+hide_body: true
+fields:
+- name: post_type
+  type: select
+  default: music
+  config:
+    required: false
+    options:
+    - music
+    - video
+    - image
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  hidden: true
+  label: Post type
+- type: text
+  name: title
+  label: Post title
+  description: Title of the post
+- type: datetime
+  name: date
+  label: Post date
+- type: text
+  name: post_client
+  label: Client name
+- type: file
+  name: post_thumbnail
+  label: Post thumbnail
+- type: text
+  name: post_video
+  label: Post youtube id
+- name: post_details_0
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
+- name: post_details_1
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
+- name: post_details_2
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
+- name: post_details_3
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
+- name: post_details_4
+  type: field_group
+  config: {}
+  fields:
+  - name: details_title
+    type: text
+    config:
+      required: false
+    label: Details title
+  - name: details_value
+    type: text
+    config:
+      required: false
+    label: Details value
+  label: Post details
