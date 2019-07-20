@@ -1,9 +1,8 @@
 +++
 date = "2019-07-03T14:00:00+00:00"
-draft = true
 post_client = "Thomas de Kluver"
-post_gallery = []
-post_thumbnail = ""
+post_gallery = ["/uploads/2019/07/20/IMG_3088.jpg", "/uploads/2019/07/20/IMG_3081.jpg", "/uploads/2019/07/20/IMG_3049.jpg", "/uploads/2019/07/20/IMG_3044.jpg", "/uploads/2019/07/20/IMG_2985.jpg", "/uploads/2019/07/20/IMG_2959.jpg", "/uploads/2019/07/20/IMG_2956.jpg", "/uploads/2019/07/20/IMG_2867.jpg", "/uploads/2019/07/20/IMG_2841.jpg", "/uploads/2019/07/20/IMG_2802.jpg", "/uploads/2019/07/20/IMG_2748.jpg", "/uploads/2019/07/20/IMG_2745.jpg", "/uploads/2019/07/20/IMG_2659.jpg", "/uploads/2019/07/20/IMG_2658.jpg", "/uploads/2019/07/20/IMG_0111.jpg", "/uploads/2019/07/20/IMG_0075.jpg", "/uploads/2019/07/20/IMG_0056.jpg"]
+post_thumbnail = "/uploads/2019/07/20/IMG_3044.jpg"
 post_type = "photo"
 title = "Thomas de Kluyver All I Want To Be"
 [post_details_0]
