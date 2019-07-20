@@ -16,19 +16,19 @@ details_production_assistants = ""
 details_styling = "Ai Kamoshita"
 hair_and_makeup = ""
 [post_details_0]
-details_title = ""
-details_value = ""
+details_title = "Photographer"
+details_value = "CG Watkins"
 [post_details_1]
-details_title = ""
-details_value = ""
+details_title = "Art Director"
+details_value = "Léo-Paul Billès"
 [post_details_2]
-details_title = ""
-details_value = ""
+details_title = "Styling"
+details_value = "Ai Kamoshita"
 [post_details_3]
-details_title = ""
-details_value = ""
+details_title = "Coordination"
+details_value = "Taka Arakawa"
 [post_details_4]
-details_title = ""
-details_value = ""
+details_title = "Production"
+details_value = "ATOM"
 
 +++
