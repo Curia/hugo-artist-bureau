@@ -110,6 +110,7 @@ fields:
     label: Details value
   label: Post details
 pages:
+- hugo/content/photo/thomas-de-kluyver-all-i-want-to-be.md
 - hugo/content/photo/t-magazine.md
 - hugo/content/photo/group-a.md
 - hugo/content/photo/filling-pieces-ss19.md
