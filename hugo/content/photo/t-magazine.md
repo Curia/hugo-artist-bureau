@@ -1,8 +1,8 @@
 +++
 date = "2019-07-05T14:00:00+00:00"
 post_client = "The New York Times Style Magazine"
-post_gallery = []
-post_thumbnail = ""
+post_gallery = ["/uploads/2019/07/20/TMAG_135_21_07_TOUCHED_FLAT_SHARP_8BIT.jpg", "/uploads/2019/07/20/TMAG_135_19_04A_TOUCHED_FLAT_SHARP_8BIT.jpg", "/uploads/2019/07/20/TMAG_135_15_22_TOUCHED_FLAT_SHARP_8BIT.jpg", "/uploads/2019/07/20/TMAG_135_14_15A_TOUCHED_FLAT_SHARP_8BIT.jpg", "/uploads/2019/07/20/TMAG_135_11_31A_TOUCHED_FLAT_SHARP_8BIT.jpg", "/uploads/2019/07/20/TMAG_135_10_28A_TOUCHED_FLAT_SHARP_8BIT.jpg", "/uploads/2019/07/20/TMAG_135_08_05_TOUCHED_FLAT_SHARP_8BIT.jpg", "/uploads/2019/07/20/TMAG_120_06_05_TOUCHED_FLAT_SHARP_8BIT.jpg", "/uploads/2019/07/20/T MAG CHINA COVER.jpg"]
+post_thumbnail = "/uploads/2019/07/20/TMAG_135_08_05_TOUCHED_FLAT_SHARP_8BIT.jpg"
 post_type = "photo"
 title = "T magazine"
 [post_details]
