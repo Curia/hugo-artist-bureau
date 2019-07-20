@@ -19,7 +19,7 @@ export default function(env) {
       label: "Hugo",
       command: hugo,
       args: {
-        default: ["-v", "--source", resolve(dest), "--destination", resolve(build), "--buildDrafts", "--buildFuture", "--buildExpired"],
+        default: ["-v", "--source", resolve(dest), "--destination", resolve(build)],
         development: ["-b", "./", "--buildDrafts", "--buildFuture", "--buildExpired"],
         preview: ["-b", "./"],
         production: []
