@@ -109,3 +109,5 @@ fields:
       required: false
     label: Details value
   label: Post details
+pages:
+- hugo/content/music/strider-step-out.md
