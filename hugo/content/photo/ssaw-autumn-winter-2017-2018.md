@@ -1,8 +1,9 @@
 +++
 date = "2019-07-10T14:00:00+00:00"
+draft = true
 post_client = "SSAW"
-post_gallery = []
-post_thumbnail = ""
+post_gallery = ["/uploads/2019/07/20/img021.jpg", "/uploads/2019/07/20/img020.jpg", "/uploads/2019/07/20/img019.jpg", "/uploads/2019/07/20/img018.jpg", "/uploads/2019/07/20/img016.jpg", "/uploads/2019/07/20/img015.jpg", "/uploads/2019/07/20/img014.jpg", "/uploads/2019/07/20/img013.jpg", "/uploads/2019/07/20/img012.jpg", "/uploads/2019/07/20/img011.jpg", "/uploads/2019/07/20/img010.jpg", "/uploads/2019/07/20/img009.jpg", "/uploads/2019/07/20/img008.jpg", "/uploads/2019/07/20/img007.jpg", "/uploads/2019/07/20/img006.jpg", "/uploads/2019/07/20/img005.jpg", "/uploads/2019/07/20/img004.jpg", "/uploads/2019/07/20/img003.jpg", "/uploads/2019/07/20/img002.jpg", "/uploads/2019/07/20/img001.jpg"]
+post_thumbnail = "/uploads/2019/07/20/img010.jpg"
 post_type = "photo"
 title = "SSAW Autumn Winter 2017-2018"
 [post_details]
