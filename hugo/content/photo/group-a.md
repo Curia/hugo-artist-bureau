@@ -17,17 +17,17 @@ details_production_assistants = ""
 details_styling = "Emma Schwarz"
 hair_and_makeup = "NORI"
 [post_details_0]
-details_title = ""
-details_value = ""
+details_title = "Photographer"
+details_value = "Adi Putra"
 [post_details_1]
-details_title = ""
-details_value = ""
+details_title = "Styling"
+details_value = "Emma Schwarz"
 [post_details_2]
-details_title = ""
-details_value = ""
+details_title = "Hair & Makeup"
+details_value = "NORI"
 [post_details_3]
-details_title = ""
-details_value = ""
+details_title = "Production"
+details_value = "Taka Arakawa"
 [post_details_4]
 details_title = ""
 details_value = ""
