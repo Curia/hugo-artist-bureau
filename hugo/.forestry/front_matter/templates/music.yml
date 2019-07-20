@@ -110,6 +110,7 @@ fields:
     label: Details value
   label: Post details
 pages:
+- hugo/content/music/video-collection.md
 - hugo/content/music/cm-collection.md
 - hugo/content/music/canyon-d-azur.md
 - hugo/content/music/nike-lab.md
