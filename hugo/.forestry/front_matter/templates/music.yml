@@ -110,4 +110,5 @@ fields:
     label: Details value
   label: Post details
 pages:
+- hugo/content/music/hologram-dance-theater-celebrity-you.md
 - hugo/content/music/strider-step-out.md
