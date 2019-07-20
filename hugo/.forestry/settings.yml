@@ -7,9 +7,11 @@ sections:
 - type: directory
   path: hugo/content/music
   label: Music
-  create: all
+  create: documents
   match: "**/*"
   exclude: _index.md
+  templates:
+  - music
 - type: directory
   path: hugo/content/photo
   label: Photo
