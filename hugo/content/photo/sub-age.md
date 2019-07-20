@@ -16,17 +16,17 @@ details_production_assistants = ""
 details_styling = "Shimada"
 hair_and_makeup = "Rie Shiraishi"
 [post_details_0]
-details_title = ""
-details_value = ""
+details_title = "Photographer"
+details_value = "Yuto Yokoyama"
 [post_details_1]
-details_title = ""
-details_value = ""
+details_title = "Styling"
+details_value = "Tatsuya Shimada"
 [post_details_2]
-details_title = ""
-details_value = ""
+details_title = "Hair & Makeup"
+details_value = "Rie Shiraishi"
 [post_details_3]
-details_title = ""
-details_value = ""
+details_title = "Production"
+details_value = "Taka Arakawa"
 [post_details_4]
 details_title = ""
 details_value = ""
