@@ -31,7 +31,6 @@ sections:
 - type: document
   path: hugo/content/contact/_index.md
   label: Contact
-  match: "**/*"
 - type: document
   path: hugo/content/collective/_index.md
   label: Collective

@@ -1,5 +1,6 @@
 ---
-title: "Homepage"
+title: Contact
+
 ---
 Hello world! I'm `contact/_index.md`
 
