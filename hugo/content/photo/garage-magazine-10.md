@@ -1,5 +1,6 @@
 +++
 date = "2019-07-12T14:00:00+00:00"
+draft = true
 post_client = "Garage Magazine 10"
 post_gallery = []
 post_thumbnail = ""
@@ -15,5 +16,20 @@ details_production = "Taka Arakawa"
 details_production_assistants = "Ryoma Nagata, Emma Schwarz"
 details_styling = "Matt Holmes"
 hair_and_makeup = "Tomomi Fukuchi"
+[post_details_0]
+details_title = "Photographer"
+details_value = "Momo Okabe"
+[post_details_1]
+details_title = "Styling"
+details_value = "Matt Holmes"
+[post_details_2]
+details_title = "Hair & Makeup"
+details_value = "Tomomi Fukuchi"
+[post_details_3]
+details_title = "Production"
+details_value = "Taka Arakawa"
+[post_details_4]
+details_title = ""
+details_value = ""
 
 +++
