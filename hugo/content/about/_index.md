@@ -6,8 +6,7 @@ title: About Us
 
 Artist Bureau Inc, founded in 1968 in Japan. We are a creative collective based in Tokyo Japan, that can provide bilingual production, coordination and art direction to the exacting demands and requirements of the client.
 
-私たちは東京を拠点とするクリエイター集団です。  
-バイリンガル対応のプロダクション等で、クライアントの様々なご要望に確かに対応いたします
+私たちは東京を拠点とするクリエイティブプロダクションです。バイリンガル対応のプロダクション等で、クライアントの様々なご要望に確かに対応いたします。
 
 ## What we do
 
