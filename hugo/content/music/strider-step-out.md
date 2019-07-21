@@ -1,5 +1,5 @@
 +++
-date = "2019-07-19T14:00:00+00:00"
+date = "2019-07-12T14:00:00+00:00"
 post_client = "Strider Japan"
 post_thumbnail = "/uploads/2018/09/19/strider.jpg"
 post_type = "music"
