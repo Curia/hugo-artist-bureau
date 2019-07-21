@@ -1,5 +1,5 @@
 +++
-date = "2019-07-18T14:00:00+00:00"
+date = "2019-07-11T14:00:00+00:00"
 post_client = "Madame Tussauds TOKYO"
 post_thumbnail = "/uploads/2018/09/19/madamtussauds.jpg"
 post_type = "music"
