@@ -33,9 +33,7 @@ enableEmoji = false
 # -------------
 [params]
 description = '''
-Write an awesome description for your new site here. You can edit this
-line in config.yml. It will appear in your document head meta (for
-Google search results) and in your RSS feed description.
+Artist Bureau - Media production company
 '''
 author = "A.Phillips"
 
@@ -68,15 +66,3 @@ author = "A.Phillips"
   weight = 5
   identifier = "about"
   url = "/about/"
-
-[[menu.main]]
-  name = "Contact"
-  weight = 6
-  identifier = "contact"
-  url = "/contact/"
-
-[[menu.main]]
-  name = "News"
-  weight = 7
-  identifier = "news"
-  url = "/news/"
