@@ -1,0 +1,31 @@
+.intro-overlay {
+  transform: translateY(-100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: $swatch-white;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+	cursor: pointer;
+	opacity: 0;
+  transition: all 300ms ease-in-out;
+
+  &__logo {
+    height: 60px;
+  }
+  &__prompt {
+    margin: 0;
+  }
+  &.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	&.disable {
+		display: none;
+	}
+}
