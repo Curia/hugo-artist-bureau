@@ -22,7 +22,9 @@ Artist Bureau Inc.<br/>
 
 Artist Bureau Head Office:<p/>
 
-東京都世田谷区駒沢2-8-16, 2F 154-0012<p>                                                     2F 2-8-16,Komazawa,Setagaya,Tokyo. Japan.
+東京都世田谷区駒沢2-8-16, 2F 154-0012<p>
+
+ 2F 2-8-16,Komazawa,Setagaya,Tokyo. Japan.
 
 Foundation: 1968  
 1968年創立
