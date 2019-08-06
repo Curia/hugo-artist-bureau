@@ -110,16 +110,16 @@ fields:
     label: Details value
   label: Post details
 pages:
-- hugo/content/video/sigma-cine-lens-high-speed-zoom-line.md
-- hugo/content/video/up-all-night.md
+- hugo/content/video/biotherm-homme.md
+- hugo/content/video/美人の赤苺.md
+- hugo/content/video/i-love-alice.md
+- hugo/content/video/pudding-or-mochi.md
+- hugo/content/video/t2-tea.md
+- hugo/content/video/swiss-air.md
 - hugo/content/video/dr-c-labo.md
 - hugo/content/video/blood-on-my-hands-feat-awich.md
-- hugo/content/video/swiss-air.md
-- hugo/content/video/make-noise.md
-- hugo/content/video/t2-tea.md
-- hugo/content/video/pudding-or-mochi.md
-- hugo/content/video/i-love-alice.md
 - hugo/content/video/okinawa-summer.md
-- hugo/content/video/美人の赤苺.md
+- hugo/content/video/sigma-cine-lens-high-speed-zoom-line.md
+- hugo/content/video/up-all-night.md
+- hugo/content/video/make-noise.md
 - hugo/content/video/akb48-♡-東海堂.md
-- hugo/content/video/biotherm-homme.md
