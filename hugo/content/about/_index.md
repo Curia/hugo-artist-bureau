@@ -46,9 +46,9 @@ In Order A-Z
 * Aviva Co.,Ltd.
 * BB media
 * BOOKOFF GROUP HOLDINGS LIMITED
-* CONDE NAST JAPAN
 * Canon Inc.
 * Caretta Shiodome
+* CONDE NAST JAPAN
 * Daiko Advertising Inc.
 * DDB Group Hong Kong.
 * Dentsu Inc.
