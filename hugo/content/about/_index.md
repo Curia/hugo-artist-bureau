@@ -37,6 +37,8 @@ CEO: Takaya Murakami
 
 ## Our Clients
 
+in order from A-Z
+
 * amana inc.
 * BB media
 * CONDE NAST JAPAN
