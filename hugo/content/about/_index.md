@@ -47,7 +47,7 @@ CEO: Takaya Murakami
 * Hearst Fujingaho Co., Ltd.
 * HYPEBEAST
 * JR Kyushu Agency Co., Ltd.
-* Turn creative Ltd.
+* Turn creative Ltd.<p>
 * Adidas AG
 * Arome Bakery
 * Astellas Pharma Inc.
