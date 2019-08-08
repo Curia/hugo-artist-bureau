@@ -1,7 +1,9 @@
 <div class="artist-slide section">
     <div class="artist-slide__body">
         <a class="artist-slide__link" href="{{.Permalink}}">
-            <h2 class="artist-slide__heading">{{ .Title }}</h2>
+            <h2 class="artist-slide__heading">{{ .Title }}
+							<span class="artist-slide__type">{{.Params.post_type}}</span>
+						</h2>
         </a>
 
         <a class="artist-slide__background" href="{{.Permalink}}">
