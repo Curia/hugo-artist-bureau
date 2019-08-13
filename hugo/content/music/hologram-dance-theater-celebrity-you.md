@@ -1,7 +1,7 @@
 +++
 date = "2019-07-11T14:00:00+00:00"
 post_client = "Madame Tussauds TOKYO"
-post_thumbnail = "/uploads/2019/08/13/マダム.jpeg"
+post_thumbnail = "/uploads/2019/08/13/holi-you.jpeg"
 post_type = "music"
 post_video = "DWy4YXiLXuY"
 title = "Hologram Dance Theater Celebrity & You"
