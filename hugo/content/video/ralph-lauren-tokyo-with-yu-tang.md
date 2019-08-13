@@ -1,6 +1,5 @@
 +++
 date = "2019-08-12T15:00:00+00:00"
-draft = true
 post_client = "HIGHSNOBIETY"
 post_thumbnail = "/uploads/2019/08/13/yuさん.jpg"
 post_type = "video"
