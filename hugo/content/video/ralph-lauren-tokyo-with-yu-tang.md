@@ -3,7 +3,7 @@ date = "2019-08-12T15:00:00+00:00"
 post_client = "HIGHSNOBIETY"
 post_thumbnail = "/uploads/2019/08/13/yuさん.jpg"
 post_type = "video"
-post_video = "hAP1Dljb8-c "
+post_video = "hAP1Dljb8-c"
 title = "Ralph Lauren Tokyo with Yu-Tang"
 [post_details_0]
 details_title = "Model"
