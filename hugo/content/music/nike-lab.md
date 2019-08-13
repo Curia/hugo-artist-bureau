@@ -1,7 +1,7 @@
 +++
 date = "2019-07-09T14:00:00+00:00"
 post_client = "Nike Lab"
-post_thumbnail = "/uploads/2018/09/19/nikelab.jpg"
+post_thumbnail = "/uploads/2019/08/13/ナイキ.jpg"
 post_type = "music"
 post_video = "h3FE-Lud2h0"
 title = "Nike Lab"
