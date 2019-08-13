@@ -1,7 +1,7 @@
 +++
 date = "2019-07-12T14:00:00+00:00"
 post_client = "Strider Japan"
-post_thumbnail = "/uploads/2018/09/19/strider.jpg"
+post_thumbnail = "/uploads/2019/08/13/stepout.jpeg"
 post_type = "music"
 post_video = "7UZCPH3ISpk"
 title = "Strider [Step Out]"
