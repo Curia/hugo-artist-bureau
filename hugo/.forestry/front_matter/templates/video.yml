@@ -110,6 +110,7 @@ fields:
     label: Details value
   label: Post details
 pages:
+- hugo/content/video/ralph-lauren-tokyo-with-yu-tang.md
 - hugo/content/video/biotherm-homme.md
 - hugo/content/video/美人の赤苺.md
 - hugo/content/video/i-love-alice.md
