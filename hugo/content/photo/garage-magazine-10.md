@@ -2,8 +2,8 @@
 date = "2019-07-12T14:00:00+00:00"
 draft = true
 post_client = "GARAGE MAGAZINE"
-post_gallery = ["/uploads/2019/08/14/14-1.jpg", "/uploads/2019/08/14/13-1.jpg", "/uploads/2019/08/14/02.jpg", "/uploads/2019/08/14/01.jpg", "/uploads/2019/08/14/11.jpg", "/uploads/2019/08/14/03.jpg", "/uploads/2019/08/14/10.jpg", "/uploads/2019/08/14/08.jpg", "/uploads/2019/08/14/12.jpg", "/uploads/2019/08/14/07.jpg", "/uploads/2019/08/14/04.jpg", "/uploads/2019/08/14/06.jpg", "/uploads/2019/08/14/05.jpg", "/uploads/2019/08/14/09.jpg", "/uploads/2019/08/14/13.jpg", "/uploads/2019/08/14/14.jpg"]
-post_thumbnail = "/uploads/2019/08/14/10-1.jpg"
+post_gallery = []
+post_thumbnail = ""
 post_type = "photo"
 title = "Garage Magazine 10"
 [post_details]
