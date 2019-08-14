@@ -1,9 +1,8 @@
 +++
 date = "2019-07-11T14:00:00+00:00"
-draft = true
 post_client = "Group A"
-post_gallery = []
-post_thumbnail = ""
+post_gallery = ["/uploads/2019/08/14/groupA_HIRES.jpeg", "/uploads/2019/08/14/groupA_HIRES-14.jpeg", "/uploads/2019/08/14/groupA_HIRES-13.jpeg", "/uploads/2019/08/14/groupA_HIRES-12.jpeg", "/uploads/2019/08/14/groupA_HIRES-9.jpeg", "/uploads/2019/08/14/groupA_HIRES-8_1.jpg", "/uploads/2019/08/14/groupA_HIRES-7_1.jpg", "/uploads/2019/08/14/groupA_HIRES-6_1.jpg", "/uploads/2019/08/14/groupA_HIRES-4_1.jpg", "/uploads/2019/08/14/groupA_HIRES-3_1.jpg", "/uploads/2019/08/14/groupA_HIRES-2_1-1.jpg"]
+post_thumbnail = "/uploads/2019/08/14/groupA_HIRES-2_1.jpg"
 post_type = "photo"
 title = "Group A"
 [post_details]

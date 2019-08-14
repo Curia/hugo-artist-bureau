@@ -110,6 +110,7 @@ fields:
     label: Details value
   label: Post details
 pages:
+- hugo/content/photo/group-a.md
 - hugo/content/photo/ralph-lauren-tokyo-with-yu-tang.md
 - hugo/content/photo/ssaw-autumn-winter-2017-2018.md
 - hugo/content/photo/garage-magazine-10.md
@@ -117,7 +118,6 @@ pages:
 - hugo/content/photo/modern-weekly-china.md
 - hugo/content/photo/island-spirit.md
 - hugo/content/photo/filling-pieces-ss19.md
-- hugo/content/photo/group-a.md
 - hugo/content/photo/t-magazine.md
 - hugo/content/photo/thomas-de-kluyver-all-i-want-to-be.md
 - hugo/content/photo/2017-fall-special-issue-the-power-of-dreams.md
