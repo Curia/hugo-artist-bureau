@@ -18,7 +18,17 @@
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 2px;
-        font-weight: 600
+				font-weight: 600;
+				
+				&-atom {
+					display: block;
+
+					svg {
+						height: 28px;
+						width: 100px;
+						margin-bottom: 5px;
+					}
+				}
     }
 
     &__type {
@@ -184,7 +194,17 @@ MEDIUM
         }
 
         &__heading {
-            text-align: center;
+						text-align: center;
+						
+						&-atom {
+							display: inline-block;
+		
+							svg {
+								height: 20px;
+								width: 100px;
+								margin-bottom: 0;
+							}
+						}
         }
 
         &__type {

@@ -7,14 +7,26 @@
         <div class="artist-slide section">
             <div class="artist-slide__body">
 
-                {{ if eq .Params.post_type "video" | or (eq .Params.post_type "music") }}
-                    <h2 class="artist-slide__heading">{{ .Title }}
+								{{ if eq .Params.post_type "video" | or (eq .Params.post_type "music") }}
+                    <h2 class="artist-slide__heading">
+												{{ if eq .Params.atom_prod true }}
+													<span class="artist-slide__heading-atom">
+														{{ partial "svg" (dict "id" "svg--logo-atom" "class" "atom-logo") -}}
+													</span>
+												{{ end }}
+												{{ .Title }}
                         <span class="artist-slide__type">{{.Params.post_type}}</span>
                     </h2>
                     {{ partial "artist-post/post-video" . }}
                     {{ partial "artist-post/post-details" . }}
-                {{ else }}
-                    <h2 class="artist-slide__heading">{{ .Title }}
+								{{ else }}
+                    <h2 class="artist-slide__heading">
+											{{ if eq .Params.atom_prod true }}
+												<span class="artist-slide__heading-atom">
+													{{ partial "svg" (dict "id" "svg--logo-atom" "class" "atom-logo") -}}
+												</span>
+											{{ end }}
+											{{ .Title }}
 											<span class="artist-slide__type">{{.Params.post_type}}</span>
 										</h2>
                     {{ partial "artist-post/post-photo" . }}
