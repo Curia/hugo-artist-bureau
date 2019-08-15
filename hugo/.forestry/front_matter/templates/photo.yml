@@ -21,6 +21,10 @@ fields:
 - type: text
   name: title
   label: Post title
+- name: atom_prod
+  type: boolean
+  label: AtoM Production
+  default: false
 - type: datetime
   name: date
   label: Post date
