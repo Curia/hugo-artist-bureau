@@ -22,6 +22,9 @@ fields:
   name: title
   label: Post title
   description: Title of the post
+- name: atom_prod
+  type: boolean
+  label: AtoM Production
 - type: datetime
   name: date
   label: Post date
