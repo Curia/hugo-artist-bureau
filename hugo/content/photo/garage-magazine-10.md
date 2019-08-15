@@ -1,9 +1,8 @@
 +++
 date = "2019-07-12T14:00:00+00:00"
-draft = true
 post_client = "GARAGE MAGAZINE"
-post_gallery = []
-post_thumbnail = ""
+post_gallery = ["/uploads/2019/08/15/01.jpg", "/uploads/2019/08/15/03.jpg", "/uploads/2019/08/15/04.jpg", "/uploads/2019/08/15/02.jpg"]
+post_thumbnail = "/uploads/2019/08/15/04.jpg"
 post_type = "photo"
 title = "Garage Magazine 10"
 [post_details]
