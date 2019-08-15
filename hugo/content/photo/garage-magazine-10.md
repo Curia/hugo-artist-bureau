@@ -1,8 +1,8 @@
 +++
 date = "2019-07-12T14:00:00+00:00"
 post_client = "GARAGE MAGAZINE"
-post_gallery = ["/uploads/2019/08/15/01.jpg", "/uploads/2019/08/15/03.jpg", "/uploads/2019/08/15/04.jpg", "/uploads/2019/08/15/02.jpg"]
-post_thumbnail = "/uploads/2019/08/15/04.jpg"
+post_gallery = ["/uploads/2019/08/15/05.jpg", "/uploads/2019/08/15/11.jpg", "/uploads/2019/08/15/07.jpg", "/uploads/2019/08/15/08.jpg", "/uploads/2019/08/15/06.jpg", "/uploads/2019/08/15/09.jpg", "/uploads/2019/08/15/13.jpg", "/uploads/2019/08/15/12.jpg", "/uploads/2019/08/15/14.jpg", "/uploads/2019/08/15/10.jpg", "/uploads/2019/08/15/01.jpg", "/uploads/2019/08/15/03.jpg", "/uploads/2019/08/15/04.jpg", "/uploads/2019/08/15/02.jpg"]
+post_thumbnail = "/uploads/2019/08/15/10.jpg"
 post_type = "photo"
 title = "Garage Magazine 10"
 [post_details]
