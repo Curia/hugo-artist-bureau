@@ -1,4 +1,5 @@
 +++
+atom_prod = true
 date = "2019-07-08T14:00:00+00:00"
 post_client = "Dr.C:Labo"
 post_thumbnail = "/uploads/2018/09/19/drclab.jpg"
