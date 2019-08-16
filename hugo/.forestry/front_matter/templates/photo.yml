@@ -114,8 +114,8 @@ fields:
     label: Details value
   label: Post details
 pages:
-- hugo/content/photo/ralph-lauren-tokyo-with-yu-tang.md
 - hugo/content/photo/bernhard-willhelm-ss19.md
+- hugo/content/photo/ralph-lauren-tokyo-with-yu-tang.md
 - hugo/content/photo/garage-magazine-10.md
 - hugo/content/photo/group-a.md
 - hugo/content/photo/ssaw-autumn-winter-2017-2018.md
