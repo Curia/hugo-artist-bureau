@@ -12,4 +12,4 @@ title: Collective
 
 ## CASTING/CREATIVE DIRECTOR: Taka Arakawa
 
-[www.instagram.com/takaresaka/](www.instagram.com/takaresaka/)
+[www.instagram.com/takaresaka/](https://www.instagram.com/takaresaka/)
