@@ -62,7 +62,13 @@ author = "A.Phillips"
   url = "/collective/"
 
 [[menu.main]]
-  name = "About"
+  name = "News"
   weight = 5
+  identifier = "news"
+  url = "/news/"
+
+[[menu.main]]
+  name = "About"
+  weight = 6
   identifier = "about"
   url = "/about/"
