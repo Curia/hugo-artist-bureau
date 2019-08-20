@@ -2,8 +2,8 @@
 atom_prod = false
 date = "2019-07-08T15:00:00+00:00"
 post_client = "HIGHSNOBIETY"
-post_gallery = ["/uploads/2019/08/19/IMG_1354.JPG", "/uploads/2019/08/19/IMG_1362.JPG", "/uploads/2019/08/19/IMG_1346 2.JPG", "/uploads/2019/08/19/IMG_1349 2.JPG", "/uploads/2019/08/19/IMG_1351 2.JPG", "/uploads/2019/08/19/IMG_1356.JPG", "/uploads/2019/08/19/IMG_1352.JPG", "/uploads/2019/08/19/IMG_1358.JPG", "/uploads/2019/08/19/IMG_1357.JPG", "/uploads/2019/08/19/IMG_1343.JPG"]
-post_thumbnail = "/uploads/2019/08/19/IMG_1356.JPG"
+post_gallery = ["/uploads/2019/08/19/IMG_1354.jpg", "/uploads/2019/08/19/IMG_1362.jpg", "/uploads/2019/08/19/IMG_1346 2.jpg", "/uploads/2019/08/19/IMG_1349 2.jpg", "/uploads/2019/08/19/IMG_1351 2.jpg", "/uploads/2019/08/19/IMG_1356.jpg", "/uploads/2019/08/19/IMG_1352.jpg", "/uploads/2019/08/19/IMG_1358.jpg", "/uploads/2019/08/19/IMG_1357.jpg", "/uploads/2019/08/19/IMG_1343.jpg"]
+post_thumbnail = "/uploads/2019/08/19/IMG_1356.jpg"
 post_type = "photo"
 title = "Highsnobiety - Uniqlo’s Exclusive Capcom & Nintendo UT Collections"
 [post_details_0]
