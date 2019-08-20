@@ -20,7 +20,13 @@
         </ul>
     </div>
     <div class="content-details__right">
-        <h2 class="content-details__title">{{ .Params.post_client}}</h2>    
+        <h2 class="content-details__title">
+						{{ .Params.post_client}}
+						{{ if eq .Params.atom_prod true }}
+						<span class="artist-slide__heading-atom">
+							{{ partial "svg" (dict "id" "svg--logo-atom" "class" "atom-logo") -}}
+						</span>
+					{{ end }}</h2>    
         <ul>
             {{ if .Params.post_details_0.details_value }}
                 <li>{{ .Params.post_details_0.details_value  }}</li>
